@@ -7,7 +7,7 @@ public class Interact : MonoBehaviour
     public GameObject interactText;//drag and drop InteractText in unity
     public bool canInteract = false;
     public GameObject player;
-    public Rigidbody playerRb;
+    public Rigidbody2D playerRb;
 
 
     // Start is called before the first frame update
@@ -25,7 +25,7 @@ public class Interact : MonoBehaviour
             _Interact();
         }
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))//when the player is in the canonInteract box, interactText is active and can canInteract is true
         {
@@ -34,7 +34,7 @@ public class Interact : MonoBehaviour
             canInteract = true;
         }
     }
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))//when the player is not in the canonInteract box, interactText is not active and can canInteract is false
         {
