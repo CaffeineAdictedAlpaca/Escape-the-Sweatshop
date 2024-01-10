@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Interact : MonoBehaviour
 {
-    public GameObject interactText;//drag and drop InteractText in unity
+    public GameObject interactText;//drag and drop InteractText in unity -Sixten
     public bool canInteract = false;
     public GameObject player;
     public Rigidbody2D playerRb;
@@ -20,14 +20,14 @@ public class Interact : MonoBehaviour
     void Update()
     {
         _Update();
-        if (canInteract == true && Input.GetKeyDown(KeyCode.E))//if you press space when can interac is true, add force in the direction the canonPointer is pointing
+        if (canInteract == true && Input.GetKeyDown(KeyCode.E))//if you press space when can interac is true, add force in the direction the canonPointer is pointing -Sixten
         {
             _Interact();
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))//when the player is in the canonInteract box, interactText is active and can canInteract is true
+        if (other.gameObject.CompareTag("Player"))//when the player is in the canonInteract box, interactText is active and can canInteract is true -Sixten
         {
             player = other.gameObject;
             interactText.SetActive(true);
@@ -36,18 +36,18 @@ public class Interact : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))//when the player is not in the canonInteract box, interactText is not active and can canInteract is false
+        if (other.gameObject.CompareTag("Player"))//when the player is not in the canonInteract box, interactText is not active and can canInteract is false -Sixten
         {
             player = other.gameObject;
             interactText.SetActive(false);
             canInteract = false;
         }
     }
-    public virtual void _Interact()//ovveride this to set what hapens on interact
+    public virtual void _Interact()//ovveride this to set what hapens on interact -Sixten
     {
 
     }
-    public virtual void _Update()//override this to use update in child skript
+    public virtual void _Update()//override this to use update in child skript -Sixten
     {
 
     }
