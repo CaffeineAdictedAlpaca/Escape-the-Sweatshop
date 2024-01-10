@@ -20,9 +20,24 @@ public class PauseMenu : MonoBehaviour
         settings.onClick.AddListener(Settings);
         Button quit = QuitButton.GetComponent<Button>();
         quit.onClick.AddListener(QuitGame);
+        buttons[2].SetActive(false);
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown("escape") && Time.timeScale == 1)
+        {
+            Time.timeScale = 0;
+            buttons[2].SetActive(true);
+        }
+        else if (Input.GetKeyDown("escape") && Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+            buttons[2].SetActive(false);
+        }
     }
     private void ResumeGame()
     {
+        Time.timeScale = 1;
         buttons[2].SetActive(false);
     }
     private void Settings()
@@ -31,6 +46,7 @@ public class PauseMenu : MonoBehaviour
     }
     private void QuitGame()
     {
+
         Application.Quit();
     }
 }
