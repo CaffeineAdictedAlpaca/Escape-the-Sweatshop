@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Door : Interact
 {
+    //Sixten gjorde hela det här scriptet
     public bool open;
 
     [SerializeField] bool moveY;
