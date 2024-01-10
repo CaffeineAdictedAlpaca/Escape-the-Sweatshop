@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LockedDoor : Door
 {
-    bool Doorkey = false;
+    bool doorkey = false;
 
     public override void _Update()
     {
@@ -13,10 +13,12 @@ public class LockedDoor : Door
     }
     public override void _Interact()
     {
-        if (Doorkey == true)
+        if (doorkey == true)
         {
             open = true;
         }
 
     }
+    
+    
 }
