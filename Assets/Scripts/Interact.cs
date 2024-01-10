@@ -47,7 +47,9 @@ public class Interact : MonoBehaviour
     {
 
     }
-    public virtual void _Update()//override this to use update in child skript -Sixten
+
+    public virtual void _Update()//override this to use update in child script
+
     {
 
     }
