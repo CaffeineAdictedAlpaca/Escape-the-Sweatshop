@@ -31,11 +31,6 @@ public class Door : Interact
             moveTrack += speed * Time.deltaTime;
         }
 
-        if ()
-        {
-
-        }
-
         if (moveTrack >= maxMove)
         {
             open = false;
