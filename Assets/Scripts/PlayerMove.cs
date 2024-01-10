@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+
+    //Stamina  and sprint (Santiago)
+    [SerializeField]
+    public float stamina = 5f;
+
+
+
     [SerializeField]
     float speed;
     float halfSpeed;
@@ -21,7 +28,15 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+ 
+
+
+
+
+
+        
         if (Input.GetKey(KeyCode.W))//if the W key is pressed add a force upp -Sixten
+
         {
             player.AddForce(Vector2.up * speed * Time.deltaTime);
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))//if moving in more than one direction reduce the speed of the player -Sixten

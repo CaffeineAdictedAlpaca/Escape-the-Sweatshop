@@ -25,6 +25,12 @@ public class Door : Interact
             transform.position += new Vector3(speed,0,0) * Time.deltaTime;
             moveTrack += speed * Time.deltaTime;
         }
+        else if (open == true && moveY == true)
+        {
+            transform.position += new Vector3(0, speed, 0) * Time.deltaTime;
+            moveTrack += speed * Time.deltaTime;
+        }
+
         if (moveTrack >= maxMove)
         {
             open = false;
