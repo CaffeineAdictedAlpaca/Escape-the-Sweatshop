@@ -4,25 +4,13 @@ using UnityEngine;
 
 public class HIde : Interact
 {
-
+    Collider2D coll;
     public bool hiding = false;
-    public Transform Cabinet;
+    public Transform Cabinet;  
 
-    public void Start()
-    {
-
-        interactText.SetActive(false);
-        var collider = Cabinet.GetComponent<Collider>();
-
-    }
-
-    private void Update()
-    {
-        
-
-    }
     public override void _Update()
     {
+        coll = player.GetComponent<Collider2D>();
         if (hiding == false&&canInteract == true)
         {
             interactText.SetActive(true);
@@ -32,6 +20,11 @@ public class HIde : Interact
         {
             interactText.SetActive(false);
 
+            coll.enabled = false;
+        }
+        if(hiding == false)
+        {
+            coll.enabled = true;
         }
 
 
@@ -64,6 +57,7 @@ public class HIde : Interact
 
     public override void _Interact()
     {
+
         player.transform.position = Cabinet.position;
         
         hiding = true;
