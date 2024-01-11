@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class LockedDoor : Door
 {
-    bool doorkey = false;
+    bool securityKey = false;
 
     public override void _Update()
     {
         base._Update();
 
     }
-    public override void _Interact()
-    {
-        if (doorkey == true)
-        {
-            open = true;
-        }
+   
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("securityKey"))
+        {
+            _Interact();
+        }
+        
     }
-    
-    
 }
