@@ -15,6 +15,10 @@ public class PlayerMove : MonoBehaviour
     float speed;
     float halfSpeed;
     float fullSpeed;
+    float sprintSpeed;
+    float halfSprintSpeed;
+    float noSprintHalfSpeed;
+    float maxStamina;
     [SerializeField]
     Rigidbody2D player;
     public float rotationSpeed = 5f;
@@ -23,17 +27,21 @@ public class PlayerMove : MonoBehaviour
     {
         halfSpeed = speed * 0.6f;
         fullSpeed = speed;
+        sprintSpeed = speed * 2;
+        halfSprintSpeed = sprintSpeed * 0.6f;
+        noSprintHalfSpeed = speed * 0.6f;
+        maxStamina = stamina;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && stamina > 0)
         {
             stamina -= 1 * Time.deltaTime;
         }
-        else
+        else if(maxStamina >= stamina)
         {
             stamina += 1 * Time.deltaTime;
         }
@@ -41,26 +49,20 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             
-
-            speed = speed *2;
-            halfSpeed = halfSpeed *2;
-            fullSpeed = fullSpeed *2;
+            halfSpeed = halfSprintSpeed;
+            fullSpeed = sprintSpeed;
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            
-
-            speed = speed / 2;
-            halfSpeed = halfSpeed / 2;
-            fullSpeed = fullSpeed / 2;
+            halfSpeed = noSprintHalfSpeed;
+            fullSpeed = sprintSpeed / 2;
         }
 
         if (stamina <= 0.00f)
         {
-            speed = speed / 2;
-            halfSpeed = -halfSpeed / 2;
-            fullSpeed = fullSpeed / 2;
+            halfSpeed = noSprintHalfSpeed;
+            fullSpeed = speed;
         }
             
 
