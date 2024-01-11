@@ -28,10 +28,41 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
- 
 
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            stamina -= 1 * Time.deltaTime;
+        }
+        else
+        {
+            stamina += 1 * Time.deltaTime;
+        }
 
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            
 
+            speed = speed *2;
+            halfSpeed = halfSpeed *2;
+            fullSpeed = fullSpeed *2;
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            
+
+            speed = speed / 2;
+            halfSpeed = halfSpeed / 2;
+            fullSpeed = fullSpeed / 2;
+        }
+
+        if (stamina <= 0.00f)
+        {
+            speed = speed / 2;
+            halfSpeed = -halfSpeed / 2;
+            fullSpeed = fullSpeed / 2;
+        }
+            
 
 
         

@@ -6,6 +6,8 @@ using UnityEngine;
 public class Pickup : Interact
 {
     
+    
+
     public GameObject Item;
     public Transform itemHolder;
     public Transform itemDrop;
