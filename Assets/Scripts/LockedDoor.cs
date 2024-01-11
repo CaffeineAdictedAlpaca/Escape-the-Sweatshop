@@ -4,7 +4,7 @@ using UnityEngine;
 public class LockedDoor : Door
 {
 
-    bool isUnlocked = false;
+    public bool isUnlocked = false;
 
     public override void _Interact()
     {
@@ -14,12 +14,17 @@ public class LockedDoor : Door
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public override void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("securityKey"))
+        base.OnTriggerEnter2D(other);
+        if (other.gameObject.CompareTag("securityKey"))
         {
             isUnlocked = true;
         }
-        
+    }
+
+    public override void _Update()
+    {
+        base._Update();
     }
 }
