@@ -25,7 +25,7 @@ public class Interact : MonoBehaviour
             _Interact();
         }
     }
-    private void OnTriggerEnter2D(Collider2D other)
+    public virtual void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))//when the player is in the canonInteract box, interactText is active and can canInteract is true -Sixten
         {

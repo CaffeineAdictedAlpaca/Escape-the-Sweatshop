@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 public class LockedDoor : Door
 {
-
-    bool isUnlocked = false;
+    //max gjort detta
+    public bool isUnlocked = false;
 
     public override void _Interact()
     {
@@ -14,12 +14,7 @@ public class LockedDoor : Door
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("securityKey"))
-        {
-            isUnlocked = true;
-        }
-        
-    }
+    
+
+    
 }
