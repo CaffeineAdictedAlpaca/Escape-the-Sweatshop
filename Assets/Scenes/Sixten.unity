@@ -1601,6 +1601,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1963325195815213163, guid: a697140b7f439504ea916fe5f8559ce1, type: 3}
+      propertyPath: stamina
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7203769999456613927, guid: a697140b7f439504ea916fe5f8559ce1, type: 3}
       propertyPath: m_Name
       value: Player
