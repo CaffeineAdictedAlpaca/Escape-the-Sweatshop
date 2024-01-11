@@ -264,6 +264,7 @@ GameObject:
   - component: {fileID: 1288049704}
   - component: {fileID: 1288049703}
   - component: {fileID: 1288049705}
+  - component: {fileID: 1288049706}
   m_Layer: 0
   m_Name: securityKey
   m_TagString: securityKey
@@ -373,6 +374,33 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.99999994, y: 1.9999999}
   m_Direction: 0
+--- !u!50 &1288049706
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288049702}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1342250699
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,7 +412,7 @@ GameObject:
   - component: {fileID: 1342250703}
   - component: {fileID: 1342250702}
   - component: {fileID: 1342250701}
-  - component: {fileID: 1342250700}
+  - component: {fileID: 1342250704}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -392,27 +420,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1342250700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1342250699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a598e99e59e2c747a8855807413f7ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
-  canInteract: 0
-  player: {fileID: 2052815838}
-  playerRb: {fileID: 2052815840}
-  open: 0
-  moveY: 1
-  moveX: 0
-  speed: 1
-  maxMove: 2
 --- !u!61 &1342250701
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -526,6 +533,28 @@ Transform:
   - {fileID: 986727056}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1342250704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342250699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269fd2ae020ef1641a994c0f25215297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactText: {fileID: 0}
+  canInteract: 0
+  player: {fileID: 2052815838}
+  playerRb: {fileID: 2052815840}
+  open: 0
+  moveY: 1
+  moveX: 0
+  speed: 1
+  maxMove: 3
+  isUnlocked: 0
 --- !u!1 &1439518084
 GameObject:
   m_ObjectHideFlags: 0
