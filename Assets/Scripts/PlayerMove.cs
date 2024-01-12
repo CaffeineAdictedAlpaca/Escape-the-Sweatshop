@@ -134,7 +134,7 @@ public class PlayerMove : MonoBehaviour
                 speed = fullSpeed;
             }
         }
-
+        /*
         // Get the direction of movement -Sixten
         Vector2 direction = GetComponent<Rigidbody2D>().velocity;
 
@@ -146,5 +146,6 @@ public class PlayerMove : MonoBehaviour
 
         // Rotate towards the calculated angle smoothly -Sixten
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+        */
     }
 }
