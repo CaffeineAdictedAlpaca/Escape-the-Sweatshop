@@ -1,14 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerMove : MonoBehaviour
 {
 
+
     //Stamina  and sprint (Santiago)
     [SerializeField]
-    public float stamina = 5f;
+    public TextMeshProUGUI staminaText;
 
+    [SerializeField]
+    public float stamina = 5f;
+    public float staminaTimer = 2;
 
 
     [SerializeField]
@@ -25,6 +31,9 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+
+
         halfSpeed = speed * 0.6f;
         fullSpeed = speed;
         sprintSpeed = speed * 2;
@@ -37,6 +46,9 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
 
+        staminaText.text = stamina.ToString("F1");
+
+
         if (Input.GetKey(KeyCode.LeftShift) && stamina > 0)
         {
             stamina -= 1 * Time.deltaTime;
@@ -45,6 +57,12 @@ public class PlayerMove : MonoBehaviour
         {
             stamina += 1 * Time.deltaTime;
         }
+
+        if (staminaTimer <= 0)
+        {
+            staminaTimer = 2;
+        }
+
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {

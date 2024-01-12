@@ -7,10 +7,14 @@ public class Pickup : Interact
  
     public GameObject item;
     public Transform itemHolder;
+    public Transform itemDorp;
 
     public override void _Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            transform.parent = itemDorp.transform;
+        }
     }
     public override void _Interact()
     {
