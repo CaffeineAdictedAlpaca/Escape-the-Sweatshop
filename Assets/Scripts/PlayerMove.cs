@@ -7,7 +7,6 @@ using TMPro;
 public class PlayerMove : MonoBehaviour
 {
 
-
     //Stamina  and sprint (Santiago)
     [SerializeField]
     public TextMeshProUGUI staminaText;
@@ -31,8 +30,8 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
 
+        
 
         halfSpeed = speed * 0.6f;
         fullSpeed = speed;
