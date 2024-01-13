@@ -33,11 +33,11 @@ public class PlayerMove : MonoBehaviour
 
         
 
-        halfSpeed = speed * 0.6f;
+        halfSpeed = speed * 0.8f;
         fullSpeed = speed;
         sprintSpeed = speed * 2;
-        halfSprintSpeed = sprintSpeed * 0.6f;
-        noSprintHalfSpeed = speed * 0.6f;
+        halfSprintSpeed = sprintSpeed * 0.8f;
+        noSprintHalfSpeed = speed * 0.8f;
         maxStamina = stamina;
     }
 
