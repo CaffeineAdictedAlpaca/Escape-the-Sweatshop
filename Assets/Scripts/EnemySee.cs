@@ -20,26 +20,23 @@ public class EnemySee : MonoBehaviour
     }
     IEnumerator fade()
     {
-        for (float i = 0; i <= 1.1f; i += 10f * Time.deltaTime)
+        for (float i = 0; i <= 1.1f; i += 10f * Time.deltaTime)//fade in the spottedScreen imedge -Sixten
         {
             yield return new WaitForSeconds(0.01f);
             spottedScreen.color = new Color(spottedScreen.color.r, spottedScreen.color.g, spottedScreen.color.b, i);
         }
 
-        player.position = new Vector2(0, 0);
+        player.position = new Vector2(0, 0);//teleports the player to spawn -Sixten
         yield return new WaitForSeconds(2f);
 
-        for (float i = 0.9f; i >= 0; i -= 10f * Time.deltaTime)
+        for (float i = 0.9f; i >= 0; i -= 10f * Time.deltaTime)//fade out the spottedScreen imedge -Sixten
         {
             yield return new WaitForSeconds(0.01f);
             spottedScreen.color = new Color(spottedScreen.color.r, spottedScreen.color.g, spottedScreen.color.b, i);
         }
-
-
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
         if (other.CompareTag("Player"))
         {
             print("Spotted");
