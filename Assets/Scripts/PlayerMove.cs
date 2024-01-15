@@ -7,7 +7,6 @@ using TMPro;
 public class PlayerMove : MonoBehaviour
 {
 
-
     //Stamina  and sprint (Santiago)
     [SerializeField]
     public TextMeshProUGUI staminaText;
@@ -31,14 +30,14 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         
 
-
-        halfSpeed = speed * 0.6f;
+        halfSpeed = speed * 0.8f;
         fullSpeed = speed;
         sprintSpeed = speed * 2;
-        halfSprintSpeed = sprintSpeed * 0.6f;
-        noSprintHalfSpeed = speed * 0.6f;
+        halfSprintSpeed = sprintSpeed * 0.8f;
+        noSprintHalfSpeed = speed * 0.8f;
         maxStamina = stamina;
     }
 
@@ -135,7 +134,7 @@ public class PlayerMove : MonoBehaviour
                 speed = fullSpeed;
             }
         }
-
+        /*
         // Get the direction of movement -Sixten
         Vector2 direction = GetComponent<Rigidbody2D>().velocity;
 
@@ -147,5 +146,6 @@ public class PlayerMove : MonoBehaviour
 
         // Rotate towards the calculated angle smoothly -Sixten
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+        */
     }
 }

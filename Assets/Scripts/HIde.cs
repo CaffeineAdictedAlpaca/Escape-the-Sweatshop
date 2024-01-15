@@ -6,7 +6,8 @@ public class HIde : Interact
 {
     Collider2D coll;
     public bool hiding = false;
-    public Transform Cabinet;  
+    public Transform Cabinet;
+    public Transform stopHideTP;
 
     public override void _Update()
     {
@@ -32,6 +33,7 @@ public class HIde : Interact
         {
             hiding = false;
             interactText.SetActive(false);
+            player.transform.position = stopHideTP.position;
         }
 
 
@@ -39,18 +41,21 @@ public class HIde : Interact
         {
             hiding = false;
             interactText.SetActive(false);
+            player.transform.position = stopHideTP.position;
         }
 
         if (Input.GetKey(KeyCode.S) && hiding == true)
         {
             hiding = false;
             interactText.SetActive(false);
+            player.transform.position = stopHideTP.position;
         }
 
         if (Input.GetKey(KeyCode.D) && hiding == true)
         {
             hiding = false;
             interactText.SetActive(false);
+            player.transform.position = stopHideTP.position;
         }
 
     }
