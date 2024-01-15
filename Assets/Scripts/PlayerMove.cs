@@ -27,6 +27,12 @@ public class PlayerMove : MonoBehaviour
     [SerializeField]
     Rigidbody2D player;
     public float rotationSpeed = 5f;
+    Animator anim;
+    private Renderer rend;
+    public bool WalkingUp;
+    public bool WalkingDown;
+    public bool WalkingRight;
+    public bool WalkingLeft;
     // Start is called before the first frame update
     void Start()
     {
@@ -95,6 +101,8 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
+                WalkingUp = true;
+                WalkingDown = false;
                 speed = fullSpeed;
             }
         }
@@ -107,6 +115,8 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
+                WalkingDown = true;
+                WalkingUp = false;
                 speed = fullSpeed;
             }
         }
@@ -119,6 +129,8 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
+                WalkingRight = true;
+                WalkingLeft = false;
                 speed = fullSpeed;
             }
         }
@@ -131,6 +143,8 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
+                WalkingLeft = true;
+                WalkingRight = false;
                 speed = fullSpeed;
             }
         }
