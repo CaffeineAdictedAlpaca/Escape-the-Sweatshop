@@ -95,6 +95,7 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
+                
                 speed = fullSpeed;
             }
         }
