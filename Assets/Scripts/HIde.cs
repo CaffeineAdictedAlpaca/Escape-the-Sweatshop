@@ -12,7 +12,7 @@ public class HIde : Interact
     public override void _Update()
     {
         coll = player.GetComponent<Collider2D>();
-        if (hiding == false&&canInteract == true)
+        if (hiding == false && canInteract == true)
         {
             interactText.SetActive(true);
         }
@@ -23,13 +23,13 @@ public class HIde : Interact
 
             coll.enabled = false;
         }
-        if(hiding == false)
+        if (hiding == false)
         {
             coll.enabled = true;
         }
 
 
-        if ((Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.D)) && hiding == true)
+        if ((Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)) && hiding == true)
         {
             hiding = false;
             interactText.SetActive(false);
@@ -41,10 +41,10 @@ public class HIde : Interact
     {
 
         player.transform.position = Cabinet.position;
-        
+
         hiding = true;
 
-        
+
     }
 
 }
