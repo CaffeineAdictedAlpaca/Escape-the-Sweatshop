@@ -565,9 +565,9 @@ MonoBehaviour:
   canInteract: 0
   player: {fileID: 1121276688}
   playerRb: {fileID: 1121276690}
-  Item: {fileID: 950845197}
+  item: {fileID: 950845197}
   itemHolder: {fileID: 624235541}
-  itemDrop: {fileID: 398163998}
+  itemDorp: {fileID: 398163998}
 --- !u!1 &1018354714
 GameObject:
   m_ObjectHideFlags: 0

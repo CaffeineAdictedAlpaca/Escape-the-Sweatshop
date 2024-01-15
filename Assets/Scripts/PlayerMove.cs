@@ -7,7 +7,6 @@ using TMPro;
 public class PlayerMove : MonoBehaviour
 {
 
-
     //Stamina  and sprint (Santiago)
     [SerializeField]
     public TextMeshProUGUI staminaText;
@@ -28,17 +27,23 @@ public class PlayerMove : MonoBehaviour
     [SerializeField]
     Rigidbody2D player;
     public float rotationSpeed = 5f;
+    Animator anim;
+    private Renderer rend;
+    public bool WalkingUp;
+    public bool WalkingDown;
+    public bool WalkingRight;
+    public bool WalkingLeft;
     // Start is called before the first frame update
     void Start()
     {
+
         
 
-
-        halfSpeed = speed * 0.6f;
+        halfSpeed = speed * 0.8f;
         fullSpeed = speed;
         sprintSpeed = speed * 2;
-        halfSprintSpeed = sprintSpeed * 0.6f;
-        noSprintHalfSpeed = speed * 0.6f;
+        halfSprintSpeed = sprintSpeed * 0.8f;
+        noSprintHalfSpeed = speed * 0.8f;
         maxStamina = stamina;
     }
 
@@ -96,6 +101,8 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
+                WalkingUp = true;
+                WalkingDown = false;
                 speed = fullSpeed;
             }
         }
@@ -108,6 +115,8 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
+                WalkingDown = true;
+                WalkingUp = false;
                 speed = fullSpeed;
             }
         }
@@ -120,6 +129,8 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
+                WalkingRight = true;
+                WalkingLeft = false;
                 speed = fullSpeed;
             }
         }
@@ -132,10 +143,12 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
+                WalkingLeft = true;
+                WalkingRight = false;
                 speed = fullSpeed;
             }
         }
-
+        /*
         // Get the direction of movement -Sixten
         Vector2 direction = GetComponent<Rigidbody2D>().velocity;
 
@@ -147,5 +160,6 @@ public class PlayerMove : MonoBehaviour
 
         // Rotate towards the calculated angle smoothly -Sixten
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+        */
     }
 }
