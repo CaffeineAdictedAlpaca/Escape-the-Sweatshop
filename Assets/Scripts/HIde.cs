@@ -27,13 +27,11 @@ public class HIde : Interact
             coll.enabled = true;
         }
 
-
         if (Input.GetKey(KeyCode.W) && hiding == true)
         {
             hiding = false;
             interactText.SetActive(false);
         }
-
 
         if (Input.GetKey(KeyCode.A) && hiding == true)
         {
