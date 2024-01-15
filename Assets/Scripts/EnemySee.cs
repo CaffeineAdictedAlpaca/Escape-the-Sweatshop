@@ -7,6 +7,7 @@ public class EnemySee : MonoBehaviour
 {
     public Image spottedScreen;
     public Transform player;
+    [SerializeField] GameObject spottedText;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +27,12 @@ public class EnemySee : MonoBehaviour
             spottedScreen.color = new Color(spottedScreen.color.r, spottedScreen.color.g, spottedScreen.color.b, i);
         }
 
+        spottedText.SetActive(true);
+
         player.position = new Vector2(0, 0);//teleports the player to spawn -Sixten
         yield return new WaitForSeconds(2f);
+
+        spottedText.SetActive(false);
 
         for (float i = 0.9f; i >= 0; i -= 10f * Time.deltaTime)//fade out the spottedScreen imedge -Sixten
         {

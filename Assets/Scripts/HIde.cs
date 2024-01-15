@@ -29,35 +29,12 @@ public class HIde : Interact
         }
 
 
-        if (Input.GetKey(KeyCode.W) && hiding == true)
+        if ((Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.D)) && hiding == true)
         {
             hiding = false;
             interactText.SetActive(false);
             player.transform.position = stopHideTP.position;
         }
-
-
-        if (Input.GetKey(KeyCode.A) && hiding == true)
-        {
-            hiding = false;
-            interactText.SetActive(false);
-            player.transform.position = stopHideTP.position;
-        }
-
-        if (Input.GetKey(KeyCode.S) && hiding == true)
-        {
-            hiding = false;
-            interactText.SetActive(false);
-            player.transform.position = stopHideTP.position;
-        }
-
-        if (Input.GetKey(KeyCode.D) && hiding == true)
-        {
-            hiding = false;
-            interactText.SetActive(false);
-            player.transform.position = stopHideTP.position;
-        }
-
     }
 
     public override void _Interact()
