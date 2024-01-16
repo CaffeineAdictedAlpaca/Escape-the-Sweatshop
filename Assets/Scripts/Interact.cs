@@ -13,6 +13,7 @@ public class Interact : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _Start();
         interactText.SetActive(false);//hide interact text on start
     }
 
@@ -42,6 +43,10 @@ public class Interact : MonoBehaviour
             interactText.SetActive(false);
             canInteract = false;
         }
+    }
+    public virtual void _Start()
+    {
+
     }
     public virtual void _Interact()//ovveride this to set what hapens on interact -Sixten
     {
