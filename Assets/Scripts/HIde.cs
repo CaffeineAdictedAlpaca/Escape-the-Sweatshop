@@ -5,6 +5,7 @@ using UnityEngine;
 public class HIde : Interact
 {
     Collider2D coll;
+    SpriteRenderer playerSprite;
     public bool hiding = false;
     public Transform Cabinet;
     public Transform stopHideTP;
@@ -12,6 +13,7 @@ public class HIde : Interact
     public override void _Update()
     {
         coll = player.GetComponent<Collider2D>();
+        playerSprite = player.GetComponent<SpriteRenderer>();
         if (hiding == false && canInteract == true)
         {
             interactText.SetActive(true);
@@ -22,10 +24,12 @@ public class HIde : Interact
             interactText.SetActive(false);
 
             coll.enabled = false;
+            playerSprite.enabled = false;
         }
         if (hiding == false)
         {
             coll.enabled = true;
+            playerSprite.enabled = true;
         }
 
 
@@ -39,7 +43,7 @@ public class HIde : Interact
 
     public override void _Interact()
     {
-
+        
         player.transform.position = Cabinet.position;
 
         hiding = true;

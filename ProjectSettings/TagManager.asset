@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Buttons
   - securityKey
+  - janitorKey
   layers:
   - Default
   - TransparentFX
@@ -49,11 +50,11 @@ TagManager:
   - name: EnemySee
     uniqueID: 1242146637
     locked: 0
-  - name: Wall
-    uniqueID: 4058105521
-    locked: 0
   - name: Door
     uniqueID: 1502734079
+    locked: 0
+  - name: Wall
+    uniqueID: 4058105521
     locked: 0
   - name: Furniture
     uniqueID: 1410113209
