@@ -6,7 +6,7 @@ using TMPro;
 
 public class PlayerMove : MonoBehaviour
 {
-
+    Vector2 movement;
     //Stamina  and sprint (Santiago)
     [SerializeField]
     public TextMeshProUGUI staminaText;
@@ -27,12 +27,8 @@ public class PlayerMove : MonoBehaviour
     [SerializeField]
     Rigidbody2D player;
     public float rotationSpeed = 5f;
-    Animator anim;
+    public Animator anim;
     private Renderer rend;
-    public bool WalkingUp;
-    public bool WalkingDown;
-    public bool WalkingRight;
-    public bool WalkingLeft;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +46,12 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
 
+        anim.SetFloat("Horizontal", movement.x);
+        anim.SetFloat("Vertical", movement.y);
+        anim.SetFloat("Speed", movement.sqrMagnitude);
         staminaText.text = stamina.ToString("F1");
 
 
@@ -94,6 +95,7 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKey(KeyCode.W))//if the W key is pressed add a force upp -Sixten
 
         {
+            //anim.SetFloat("Horizontal", 1);
             player.AddForce(Vector2.up * speed * Time.deltaTime);
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))//if moving in more than one direction reduce the speed of the player -Sixten
             {
@@ -101,13 +103,12 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
-                WalkingUp = true;
-                WalkingDown = false;
                 speed = fullSpeed;
             }
         }
         if (Input.GetKey(KeyCode.S))//if the S key is pressed add a force down -Sixten
         {
+            //anim.SetFloat("Horizontal", -1);
             player.AddForce(Vector2.down * speed * Time.deltaTime);
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.D))//if moving in more than one direction reduce the speed of the player -Sixten
             {
@@ -115,13 +116,12 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
-                WalkingDown = true;
-                WalkingUp = false;
                 speed = fullSpeed;
             }
         }
         if (Input.GetKey(KeyCode.D))//if the D key is pressed add a force right -Sixten
         {
+            //anim.SetFloat("Vertical", 1);
             player.AddForce(Vector2.right * speed * Time.deltaTime);
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))//if moving in more than one direction reduce the speed of the player -Sixten
             {
@@ -129,13 +129,12 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
-                WalkingRight = true;
-                WalkingLeft = false;
                 speed = fullSpeed;
             }
         }
         if (Input.GetKey(KeyCode.A))//if the A key is pressed add a force left -Sixten
-        {
+        { 
+            //anim.SetFloat("Vertical", -1);
             player.AddForce(Vector2.left * speed * Time.deltaTime);
             if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.D))//if moving in more than one direction reduce the speed of the player -Sixten
             {
@@ -143,8 +142,6 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
-                WalkingLeft = true;
-                WalkingRight = false;
                 speed = fullSpeed;
             }
         }
