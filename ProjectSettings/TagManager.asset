@@ -47,9 +47,6 @@ TagManager:
   - name: Floor
     uniqueID: 2554560837
     locked: 0
-  - name: EnemySee
-    uniqueID: 1242146637
-    locked: 0
   - name: Door
     uniqueID: 1502734079
     locked: 0
@@ -58,6 +55,9 @@ TagManager:
     locked: 0
   - name: Furniture
     uniqueID: 1410113209
+    locked: 0
+  - name: EnemySee
+    uniqueID: 1242146637
     locked: 0
   - name: Player
     uniqueID: 1327059001
