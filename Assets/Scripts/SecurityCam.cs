@@ -10,8 +10,6 @@ public class RotateObject : MonoBehaviour
 
     void Update()
     {
-        print(transform.rotation.z);
-
         if (transform.rotation.z > 0.5f)
         {
             rotateClockwise = !rotateClockwise;
