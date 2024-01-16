@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pickup : Interact
 {
-    [SerializeField] GameObject equippedText;
+    [SerializeField] GameObject ItemIcon;
 
     public GameObject item;
     public Transform itemHolder;
@@ -15,7 +15,7 @@ public class Pickup : Interact
         if (Input.GetKeyDown(KeyCode.Q))
         {
             transform.parent = itemDorp.transform;
-            equippedText.SetActive(false);
+            ItemIcon.SetActive(false);
             GetComponent<SpriteRenderer>().enabled = true;
         }
     }
@@ -24,7 +24,7 @@ public class Pickup : Interact
         transform.parent = player.transform;
         transform.position = itemHolder.position;
         transform.rotation = player.transform.rotation;
-        equippedText.SetActive(true);
+        ItemIcon.SetActive(true);
         GetComponent<SpriteRenderer>().enabled = false;
     }
 
