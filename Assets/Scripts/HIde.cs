@@ -5,6 +5,7 @@ using UnityEngine;
 public class HIde : Interact
 {
     Collider2D coll;
+    SpriteRenderer playerSprite;
     public bool hiding = false;
     public Transform Cabinet;
     public Transform stopHideTP;
@@ -12,7 +13,8 @@ public class HIde : Interact
     public override void _Update()
     {
         coll = player.GetComponent<Collider2D>();
-        if (hiding == false&&canInteract == true)
+        playerSprite = player.GetComponent<SpriteRenderer>();
+        if (hiding == false && canInteract == true)
         {
             interactText.SetActive(true);
         }
@@ -22,52 +24,31 @@ public class HIde : Interact
             interactText.SetActive(false);
 
             coll.enabled = false;
+            playerSprite.enabled = false;
         }
-        if(hiding == false)
+        if (hiding == false)
         {
             coll.enabled = true;
+            playerSprite.enabled = true;
         }
 
 
-        if (Input.GetKey(KeyCode.W) && hiding == true)
+        if ((Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)) && hiding == true)
         {
             hiding = false;
             interactText.SetActive(false);
             player.transform.position = stopHideTP.position;
         }
-
-
-        if (Input.GetKey(KeyCode.A) && hiding == true)
-        {
-            hiding = false;
-            interactText.SetActive(false);
-            player.transform.position = stopHideTP.position;
-        }
-
-        if (Input.GetKey(KeyCode.S) && hiding == true)
-        {
-            hiding = false;
-            interactText.SetActive(false);
-            player.transform.position = stopHideTP.position;
-        }
-
-        if (Input.GetKey(KeyCode.D) && hiding == true)
-        {
-            hiding = false;
-            interactText.SetActive(false);
-            player.transform.position = stopHideTP.position;
-        }
-
     }
 
     public override void _Interact()
     {
-
-        player.transform.position = Cabinet.position;
         
+        player.transform.position = Cabinet.position;
+
         hiding = true;
 
-        
+
     }
 
 }
