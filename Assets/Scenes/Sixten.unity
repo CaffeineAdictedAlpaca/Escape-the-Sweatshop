@@ -1235,12 +1235,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 318712791}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f9447e419d639d439cb31e7e351fa43, type: 3}
+  m_Script: {fileID: 11500000, guid: 79f75ed8373e3c8448c2b1edbc4118ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spottedScreen: {fileID: 136023751}
+  interactText: {fileID: 0}
+  canInteract: 0
   player: {fileID: 0}
-  spottedText: {fileID: 847112908}
+  playerRb: {fileID: 0}
+  cameras: []
 --- !u!1 &325060323
 GameObject:
   m_ObjectHideFlags: 0
