@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pickup : Interact
 {
+
     [SerializeField] GameObject ItemIcon;
 
     public GameObject item;
