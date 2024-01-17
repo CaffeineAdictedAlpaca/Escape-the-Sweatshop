@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Buttons
   - securityKey
+  - janitorKey
   layers:
   - Default
   - TransparentFX
