@@ -42,7 +42,7 @@ public class EnemySee : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player"))//when enemy sees player: start the respawn prosses
         {
             print("Spotted");
             StartCoroutine(fade());
