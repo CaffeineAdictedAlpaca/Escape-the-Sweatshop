@@ -8,6 +8,9 @@ public class ControlPanel : Interact
 
     public override void _Interact()
     {
-        
+        for (int i = 0; i < cameras.Length; i++)
+        {
+            cameras[i].SetActive(false);
+        }
     }
 }
