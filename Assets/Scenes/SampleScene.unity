@@ -1445,7 +1445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchoredPosition: {x: 0, y: -300}
   m_SizeDelta: {x: 404.7, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &298359190
@@ -5792,7 +5792,7 @@ GameObject:
   - component: {fileID: 1410815669}
   m_Layer: 0
   m_Name: SKey
-  m_TagString: Untagged
+  m_TagString: securityKey
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7874,7 +7874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchoredPosition: {x: 0, y: -300}
   m_SizeDelta: {x: 404.7, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1734500574
@@ -9707,10 +9707,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 'Stamina: 0,0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10920,8 +10920,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1710666690177797243}
   - component: {fileID: 6604049845359974215}
-  - component: {fileID: 5171052412800036020}
   - component: {fileID: 4702489139023614227}
+  - component: {fileID: 6604049845359974216}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -12550,27 +12550,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5171052412800036020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2168605263942730092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7eed0e3d643313a41a68e4fce98dfc63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactText: {fileID: 3640393214165943275}
-  canInteract: 0
-  player: {fileID: 6117749419034086743}
-  playerRb: {fileID: 4774916548290475553}
-  open: 0
-  moveY: 0
-  moveX: 1
-  speed: 1
-  maxMove: 2
 --- !u!114 &5171052412930704001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13553,6 +13532,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6604049845359974216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2168605263942730092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269fd2ae020ef1641a994c0f25215297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactText: {fileID: 3640393214165943275}
+  canInteract: 0
+  player: {fileID: 6117749419034086743}
+  playerRb: {fileID: 4774916548290475553}
+  open: 0
+  moveY: 0
+  moveX: 1
+  speed: 1
+  maxMove: 2
+  doorLockedText: {fileID: 134124980}
+  isUnlocked: 0
 --- !u!212 &6604049845496953202
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14403,7 +14405,7 @@ MonoBehaviour:
   m_text: Press E to open door
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
