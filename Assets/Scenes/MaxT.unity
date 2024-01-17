@@ -3065,7 +3065,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.1262905, g: 0.15789032, b: 0.20754719, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4121,6 +4121,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7203769999456613927, guid: a697140b7f439504ea916fe5f8559ce1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2052815841}
+    - targetCorrespondingSourceObject: {fileID: 7203769999456613927, guid: a697140b7f439504ea916fe5f8559ce1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2052815846}
   m_SourcePrefab: {fileID: 100100000, guid: a697140b7f439504ea916fe5f8559ce1, type: 3}
 --- !u!1 &2052815838 stripped
 GameObject:
@@ -4147,6 +4150,21 @@ MonoBehaviour:
   codePanel: {fileID: 1377960163}
   closedSafe: {fileID: 71390791}
   openSafe: {fileID: 580874023}
+--- !u!111 &2052815846
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052815838}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2067359800
 GameObject:
   m_ObjectHideFlags: 0
