@@ -53,7 +53,9 @@ public class PlayerMove : MonoBehaviour
         anim.SetFloat("Horizontal", movement.x);
         anim.SetFloat("Vertical", movement.y);
         anim.SetFloat("Speed", movement.sqrMagnitude);
-        staminaText.text = stamina.ToString("F1");
+
+
+        staminaText.text = stamina.ToString();
 
         staminaTimer += 1 * Time.deltaTime;
 
@@ -68,11 +70,7 @@ public class PlayerMove : MonoBehaviour
             stamina += 1 * Time.deltaTime;
         }
 
-        if (staminaTimer > 0)
-        {
-            
-            
-        }
+        
 
         if(staminaTimer >= 2)
         {
