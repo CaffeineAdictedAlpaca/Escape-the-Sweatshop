@@ -3009,7 +3009,8 @@ MonoBehaviour:
   canInteract: 0
   player: {fileID: 6117749419034086743}
   playerRb: {fileID: 4774916548290475553}
-  cameras: []
+  cameras:
+  - {fileID: 1287330419}
 --- !u!1 &748810183
 GameObject:
   m_ObjectHideFlags: 0
