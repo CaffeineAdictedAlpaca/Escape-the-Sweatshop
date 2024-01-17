@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class ControlPanel : Interact
 {
-    [SerializeField] GameObject[] cameras;
+    [SerializeField] GameObject[] cameras;//drop in all security camera view colliders in this array -Sixten
 
-    public override void _Interact()
+    public override void _Interact()//on interact disable the camera view coliders -Sixten
     {
         for (int i = 0; i < cameras.Length; i++)
         {
