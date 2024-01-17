@@ -38,9 +38,5 @@ public class MainMenu : MonoBehaviour
     private void Update()
     {
         SceneManager.GetSceneByName("SampleScene");
-        if ()
-        {
-
-        }
     }
 }
