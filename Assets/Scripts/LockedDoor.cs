@@ -4,7 +4,7 @@ using UnityEngine;
 public class LockedDoor : Door
 {
     [SerializeField] GameObject doorLockedText;
-    //max gjort detta
+
     public bool isUnlocked = false;
 
     public override void _Interact()
