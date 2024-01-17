@@ -29,7 +29,7 @@ public class EnemySee : MonoBehaviour
 
         spottedText.SetActive(true);
 
-        player.position = new Vector2(0, 0);//teleports the player to spawn -Sixten
+        player.position = new Vector2(-0.9f, -1.6f);//teleports the player to spawn -Sixten
         yield return new WaitForSeconds(2f);
 
         spottedText.SetActive(false);
