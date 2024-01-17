@@ -55,18 +55,24 @@ public class PlayerMove : MonoBehaviour
         anim.SetFloat("Speed", movement.sqrMagnitude);
 
 
-        staminaText.text = stamina.ToString();
+        staminaText.text = ("Stamina: ") +  stamina.ToString("F1");
 
+
+        print("timerUP");
         staminaTimer += 1 * Time.deltaTime;
 
         if (Input.GetKey(KeyCode.LeftShift) && stamina > 0)
         {
+            print("sprinting");
+
             staminaTimer = 0;
             stamina -= 1 * Time.deltaTime;
             timerDone = false;
         }
         else if ((maxStamina > stamina) && timerDone == true)
         {
+
+            print("Recharging stamina");
             stamina += 1 * Time.deltaTime;
         }
 
@@ -74,6 +80,8 @@ public class PlayerMove : MonoBehaviour
 
         if(staminaTimer >= 2)
         {
+
+            print("timerDone");
             timerDone = true;
         }
 
