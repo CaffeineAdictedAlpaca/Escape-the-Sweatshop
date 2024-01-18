@@ -17,7 +17,6 @@ public class codePanel : MonoBehaviour
     private void Start()
     {
         keyPadCode = Random.Range(1000, 9999);//gör en randomKod till safe
-        print("test");
     }
     // Update is called once per frame
     void Update()
