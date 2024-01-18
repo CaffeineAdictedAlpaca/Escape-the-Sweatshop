@@ -1729,9 +1729,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9447e419d639d439cb31e7e351fa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spottedScreen: {fileID: 0}
+  spottedScreen: {fileID: 7826145743033463344}
   player: {fileID: 2587900372116305993}
-  spottedText: {fileID: 0}
+  spottedText: {fileID: 4787043721070730219}
 --- !u!212 &330749848
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1847,7 +1847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyPadCode: 0
-  codeText: {fileID: 0}
+  codeText: {fileID: 3365561951822272166}
 --- !u!61 &393351463
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2365,11 +2365,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111e8753cb330ad43bc6a2ebc78b671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 6979498838102856395}
   canInteract: 0
   player: {fileID: 2465270349920765795}
   playerRb: {fileID: 5952268627345695388}
-  ItemIcon: {fileID: 0}
+  ItemIcon: {fileID: 5938231145459788782}
   item: {fileID: 473035251}
   itemHolder: {fileID: 2233569018198617029}
   itemDorp: {fileID: 1123142695}
@@ -2617,7 +2617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eed0e3d643313a41a68e4fce98dfc63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 2848879296838975530}
   canInteract: 0
   player: {fileID: 2465270349920765795}
   playerRb: {fileID: 5952268627345695388}
@@ -2978,9 +2978,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9447e419d639d439cb31e7e351fa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spottedScreen: {fileID: 0}
+  spottedScreen: {fileID: 7826145743033463344}
   player: {fileID: 2587900372116305993}
-  spottedText: {fileID: 0}
+  spottedText: {fileID: 4787043721070730219}
 --- !u!212 &563338813
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3109,7 +3109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4db0c20a1934d44bbc219d162f0641b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 7675328922947164791}
   canInteract: 0
   player: {fileID: 2465270349920765795}
   playerRb: {fileID: 5952268627345695388}
@@ -3649,7 +3649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eed0e3d643313a41a68e4fce98dfc63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 2848879296838975530}
   canInteract: 0
   player: {fileID: 2465270349920765795}
   playerRb: {fileID: 5952268627345695388}
@@ -3801,7 +3801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79f75ed8373e3c8448c2b1edbc4118ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 8232508672047914014}
   canInteract: 0
   player: {fileID: 2465270349920765795}
   playerRb: {fileID: 5952268627345695388}
@@ -6052,7 +6052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af49a2dcec442934b9c77d39c64327b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 2848879296838975530}
   canInteract: 0
   player: {fileID: 2465270349920765795}
   playerRb: {fileID: 5952268627345695388}
@@ -6061,7 +6061,7 @@ MonoBehaviour:
   moveX: 1
   speed: 1
   maxMove: 2
-  doorLockedText: {fileID: 0}
+  doorLockedText: {fileID: 7347938282798094226}
   isUnlocked: 0
 --- !u!61 &1012156753
 BoxCollider2D:
@@ -6386,9 +6386,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9447e419d639d439cb31e7e351fa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spottedScreen: {fileID: 0}
+  spottedScreen: {fileID: 7826145743033463344}
   player: {fileID: 2587900372116305993}
-  spottedText: {fileID: 0}
+  spottedText: {fileID: 4787043721070730219}
 --- !u!212 &1056787627
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6517,7 +6517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4db0c20a1934d44bbc219d162f0641b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 7675328922947164791}
   canInteract: 0
   player: {fileID: 2465270349920765795}
   playerRb: {fileID: 5952268627345695388}
@@ -8251,9 +8251,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9447e419d639d439cb31e7e351fa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spottedScreen: {fileID: 0}
+  spottedScreen: {fileID: 7826145743033463344}
   player: {fileID: 2587900372116305993}
-  spottedText: {fileID: 0}
+  spottedText: {fileID: 4787043721070730219}
 --- !u!212 &1287330423
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9105,11 +9105,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111e8753cb330ad43bc6a2ebc78b671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 6979498838102856395}
   canInteract: 0
   player: {fileID: 2465270349920765795}
   playerRb: {fileID: 5952268627345695388}
-  ItemIcon: {fileID: 0}
+  ItemIcon: {fileID: 6903442654965099725}
   item: {fileID: 1410815668}
   itemHolder: {fileID: 2233569018198617029}
   itemDorp: {fileID: 1123142695}
@@ -11442,11 +11442,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b47622a8b95f946b483241dd1be5a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 4082567543792548575}
   canInteract: 0
   player: {fileID: 2465270349920765795}
   playerRb: {fileID: 5952268627345695388}
-  keyPadKoden: {fileID: 0}
+  keyPadKoden: {fileID: 1503121485456294937}
   keyPadCode: {fileID: 393351462}
 --- !u!212 &1695808595
 SpriteRenderer:
@@ -11512,14 +11512,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111e8753cb330ad43bc6a2ebc78b671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 4082567543792548575}
   canInteract: 0
   player: {fileID: 2465270349920765795}
   playerRb: {fileID: 5952268627345695388}
-  ItemIcon: {fileID: 0}
+  ItemIcon: {fileID: 2844765986114123379}
   item: {fileID: 1695808591}
   itemHolder: {fileID: 2233569018198617029}
-  itemDorp: {fileID: 0}
+  itemDorp: {fileID: 1123142695}
 --- !u!1 &1697036180
 GameObject:
   m_ObjectHideFlags: 0
@@ -11744,9 +11744,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9447e419d639d439cb31e7e351fa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spottedScreen: {fileID: 0}
+  spottedScreen: {fileID: 7826145743033463344}
   player: {fileID: 2587900372116305993}
-  spottedText: {fileID: 0}
+  spottedText: {fileID: 4787043721070730219}
 --- !u!212 &1701022983
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13053,7 +13053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db2c2271dd474e840ac0ee9f75f7a9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 2848879296838975530}
   canInteract: 0
   player: {fileID: 2465270349920765795}
   playerRb: {fileID: 5952268627345695388}
@@ -13062,7 +13062,7 @@ MonoBehaviour:
   moveX: 0
   speed: 1
   maxMove: 2
-  doorLockedText: {fileID: 0}
+  doorLockedText: {fileID: 7347938282798094226}
   isUnlocked: 0
 --- !u!1 &1945078042
 GameObject:
@@ -14130,7 +14130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4db0c20a1934d44bbc219d162f0641b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 7675328922947164791}
   canInteract: 0
   player: {fileID: 2465270349920765795}
   playerRb: {fileID: 5952268627345695388}
@@ -14805,6 +14805,148 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 0.63568044}
   m_EdgeRadius: 0
+--- !u!1 &2141025592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2141025595}
+  - component: {fileID: 2141025594}
+  - component: {fileID: 2141025593}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2141025593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141025592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61ebff3120f36284f8c06f239ebcdcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundMusic: {fileID: 2141025594}
+--- !u!82 &2141025594
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141025592}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1810ff04c73f6294a950891a927cc33d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 0
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &2141025595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141025592}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2141664188
 GameObject:
   m_ObjectHideFlags: 0
@@ -15365,7 +15507,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 393351462}
         m_TargetAssemblyTypeName: codePanel, Assembly-CSharp
         m_MethodName: AddDigit
         m_Mode: 5
@@ -15377,25 +15519,6 @@ MonoBehaviour:
           m_StringArgument: 3
           m_BoolArgument: 0
         m_CallState: 2
---- !u!224 &635046415972000493
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2913530599049019573}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6414262348932476289}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -244.95, y: -221.97}
-  m_SizeDelta: {x: 9999, y: 9999}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &662976131105721155
 GameObject:
   m_ObjectHideFlags: 0
@@ -16500,7 +16623,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 393351462}
         m_TargetAssemblyTypeName: codePanel, Assembly-CSharp
         m_MethodName: AddDigit
         m_Mode: 5
@@ -16880,6 +17003,9 @@ GameObject:
   - component: {fileID: 5952268627345695388}
   - component: {fileID: 5904084869510809428}
   - component: {fileID: 5952268627345695389}
+  - component: {fileID: 5952268627345695392}
+  - component: {fileID: 5952268627345695391}
+  - component: {fileID: 5952268627345695390}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -17186,9 +17312,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: codePanel, Assembly-CSharp
-        m_MethodName: AddDigit
+      - m_Target: {fileID: 393351462}
+        m_TargetAssemblyTypeName: UnityEngine.Component, UnityEngine
+        m_MethodName: set_tag
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17252,24 +17378,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &2913530599049019573
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 635046415972000493}
-  - component: {fileID: 3669701353176780828}
-  - component: {fileID: 3503896445466569567}
-  m_Layer: 5
-  m_Name: Image (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!114 &2955076872786368077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17314,7 +17422,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 393351462}
         m_TargetAssemblyTypeName: codePanel, Assembly-CSharp
         m_MethodName: AddDigit
         m_Mode: 5
@@ -17623,7 +17731,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 393351462}
         m_TargetAssemblyTypeName: codePanel, Assembly-CSharp
         m_MethodName: AddDigit
         m_Mode: 5
@@ -18173,36 +18281,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3503896445466569567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2913530599049019573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &3532964380368317714
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18450,14 +18528,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!222 &3669701353176780828
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2913530599049019573}
-  m_CullTransparentMesh: 1
 --- !u!224 &3709456161634370297
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18674,7 +18744,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 393351462}
         m_TargetAssemblyTypeName: codePanel, Assembly-CSharp
         m_MethodName: AddDigit
         m_Mode: 5
@@ -19394,7 +19464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d33b231f27259484abf1d225cb19fe06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  staminaText: {fileID: 0}
+  staminaText: {fileID: 5877416910769996072}
   timerDone: 0
   stamina: 1
   staminaTimer: 2
@@ -19796,7 +19866,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 393351462}
         m_TargetAssemblyTypeName: codePanel, Assembly-CSharp
         m_MethodName: AddDigit
         m_Mode: 5
@@ -19994,7 +20064,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 393351462}
         m_TargetAssemblyTypeName: codePanel, Assembly-CSharp
         m_MethodName: AddDigit
         m_Mode: 5
@@ -20198,7 +20268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eed0e3d643313a41a68e4fce98dfc63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 2848879296838975530}
   canInteract: 0
   player: {fileID: 2465270349920765795}
   playerRb: {fileID: 5952268627345695388}
@@ -20670,7 +20740,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 393351462}
         m_TargetAssemblyTypeName: codePanel, Assembly-CSharp
         m_MethodName: AddDigit
         m_Mode: 5
@@ -20881,7 +20951,213 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bccac7620846ab40b093a60211a66d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  codePanel: {fileID: 0}
+  codePanel: {fileID: 7905959788741419068}
+--- !u!82 &5952268627345695390
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2465270349920765795}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ab93fe9cdd0b7b64da71a7aa708a7954, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &5952268627345695391
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2465270349920765795}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 2065db1aa1e56624c8e65bec543f2c27, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &5952268627345695392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2465270349920765795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba93234f682a50489bee9191f1e90f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepsSound: {fileID: 5952268627345695391}
+  sprintSound: {fileID: 5952268627345695390}
 --- !u!1 &5970146142439777455
 GameObject:
   m_ObjectHideFlags: 0
@@ -21362,7 +21638,6 @@ RectTransform:
   - {fileID: 3555744631582337352}
   - {fileID: 5536529852417132852}
   - {fileID: 5411525090285778380}
-  - {fileID: 635046415972000493}
   - {fileID: 6790067851427443675}
   - {fileID: 3734350153802405175}
   - {fileID: 7735985984531336853}
@@ -21514,7 +21789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269fd2ae020ef1641a994c0f25215297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 2848879296838975530}
   canInteract: 0
   player: {fileID: 2465270349920765795}
   playerRb: {fileID: 5952268627345695388}
@@ -21523,7 +21798,7 @@ MonoBehaviour:
   moveX: 1
   speed: 1
   maxMove: 2
-  doorLockedText: {fileID: 0}
+  doorLockedText: {fileID: 7347938282798094226}
   isUnlocked: 0
 --- !u!212 &6604049845496953202
 SpriteRenderer:
@@ -21651,7 +21926,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 393351462}
         m_TargetAssemblyTypeName: codePanel, Assembly-CSharp
         m_MethodName: AddDigit
         m_Mode: 5
@@ -23712,6 +23987,9 @@ SceneRoots:
   - {fileID: 6414262348932476289}
   - {fileID: 519420032}
   - {fileID: 1466697379}
+  - {fileID: 393351465}
+  - {fileID: 1695808592}
+  - {fileID: 1012156754}
   - {fileID: 2587900372116305993}
   - {fileID: 1220562339}
   - {fileID: 911462556}
@@ -23787,10 +24065,7 @@ SceneRoots:
   - {fileID: 2035005109}
   - {fileID: 1078627318}
   - {fileID: 580595186}
-  - {fileID: 1695808592}
   - {fileID: 1510642102}
-  - {fileID: 393351465}
-  - {fileID: 1012156754}
   - {fileID: 37317672}
   - {fileID: 1044382090}
   - {fileID: 1412994860}
@@ -23814,3 +24089,4 @@ SceneRoots:
   - {fileID: 988417161}
   - {fileID: 794082030}
   - {fileID: 1204938441}
+  - {fileID: 2141025595}
