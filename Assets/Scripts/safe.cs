@@ -9,7 +9,7 @@ public class safe : MonoBehaviour
     //Sätt script på player
 
     [SerializeField]
-    GameObject codePanel,door;
+    GameObject codePanel;
 
     public static bool isKeyPadOpen = false;
 
@@ -28,7 +28,7 @@ public class safe : MonoBehaviour
         if (isKeyPadOpen == true)//om safe är open sätt på opensafe gameobject
         {
             codePanel.SetActive(false);
-            door.transform.position += new Vector3(3, 0, 0) * Time.deltaTime;
+            
         }
     }
 
