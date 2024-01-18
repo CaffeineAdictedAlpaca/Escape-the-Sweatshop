@@ -8,12 +8,12 @@ public class LappMedKod : Interact
     //gjord av max
    
     [SerializeField]
-    TextMeshProUGUI safeKoden;
-    public codePanel safeCode;
+    TextMeshProUGUI keyPadKoden;
+    public codePanel keyPadCode;
     
     
     public override void _Interact()//när du interactar så ska texten på lappen visa random koden
     {
-        safeKoden.text = safeCode.safeCode.ToString();
+        keyPadKoden.text = keyPadCode.keyPadCode.ToString();
     }
 }
