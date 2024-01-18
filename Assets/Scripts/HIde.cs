@@ -17,7 +17,7 @@ public class HIde : Interact
     }
     public override void _Update()
     {
-        if ((Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)) && hiding == true)
+        if ((Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)) && hiding == true)//if the player enters a movement key they stop hiding -Sixten
         {
             notHiding();
             interactText.SetActive(false);
@@ -26,23 +26,21 @@ public class HIde : Interact
         }
     }
 
-    public override void _Interact()
+    public override void _Interact()//on interact start hiding -Sixten
     {
         isHiding();
         player.transform.position = Cabinet.position;
 
         hiding = true;
-
-
     }
-    public void isHiding()
+    public void isHiding()//disables the player collider and sprite renderer when hiding -Sixten
     {
         interactText.SetActive(false);
 
         coll.enabled = false;
         playerSprite.enabled = false;
     }
-    public void notHiding()
+    public void notHiding()//enables the player collider and sprite renderer when the player stops hiding -Sixten
     {
         coll.enabled = true;
         playerSprite.enabled = true;
