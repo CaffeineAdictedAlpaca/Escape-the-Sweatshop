@@ -2029,6 +2029,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &406937709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 406937710}
+  m_Layer: 0
+  m_Name: "StopHideKl\xE4dh\xF6g (1)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &406937710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406937709}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.018, y: -0.347, z: 0.56637996}
+  m_LocalScale: {x: 0.307838, y: 0.307838, z: 0.307838}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1078627318}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &437523513
 GameObject:
   m_ObjectHideFlags: 0
@@ -5222,7 +5253,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0033482537, y: -0.1577889}
@@ -5256,7 +5287,7 @@ MonoBehaviour:
   playerRb: {fileID: 4774916548290475553}
   hiding: 0
   Cabinet: {fileID: 126629521}
-  stopHideTP: {fileID: 581132072}
+  stopHideTP: {fileID: 406937710}
 --- !u!212 &1078627317
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5321,7 +5352,8 @@ Transform:
   m_LocalPosition: {x: 17.42, y: 3.66, z: 0}
   m_LocalScale: {x: 3.2484615, y: 3.2484615, z: 3.2484615}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 406937710}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1085859179
@@ -6882,6 +6914,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1420862302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1420862303}
+  m_Layer: 0
+  m_Name: "StopHideKl\xE4dh\xF6g"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1420862303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420862302}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.37, y: -0.18, z: 0.56637996}
+  m_LocalScale: {x: 0.30783802, y: 0.30783802, z: 0.30783802}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2035005109}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1425035206
 GameObject:
@@ -11107,7 +11170,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.061988622, y: -0.1577889}
@@ -11141,7 +11204,7 @@ MonoBehaviour:
   playerRb: {fileID: 4774916548290475553}
   hiding: 0
   Cabinet: {fileID: 126629521}
-  stopHideTP: {fileID: 581132072}
+  stopHideTP: {fileID: 1420862303}
 --- !u!212 &2035005108
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11206,7 +11269,8 @@ Transform:
   m_LocalPosition: {x: 25.54, y: 0.7, z: 0}
   m_LocalScale: {x: 3.2484615, y: 3.2484615, z: 3.2484615}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1420862303}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2038075721
