@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 
-public class SoundManager : MonoBehaviour
+public class VolumeManager : MonoBehaviour
 {
     [Header("Audio Sliders")]
     [SerializeField] private Slider masterSlider;
