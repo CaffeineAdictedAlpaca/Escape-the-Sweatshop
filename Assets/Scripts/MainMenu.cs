@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
     }
     private void StartGame()
     {
-        SceneManager.LoadScene("SampleScene", LoadSceneMode.Additive);
+        SceneManager.LoadScene(1, LoadSceneMode.Additive);
         MenuObjects.SetActive(false);
     }
     private void Settings()
@@ -37,6 +37,6 @@ public class MainMenu : MonoBehaviour
     }
     private void Update()
     {
-        SceneManager.GetSceneByName("SampleScene");
+        SceneManager.GetSceneByBuildIndex(1);
     }
 }
