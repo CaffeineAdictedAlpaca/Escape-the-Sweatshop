@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class keyPadDoor : LockedDoor
 {
-    //gjord av max
-
-  
-    public override void _Interact()
+    //gjord av max fixad av sixten
+    public override void _Update()
     {
-        base._Interact();
+        base._Update();
         if (safe.isKeyPadOpen == true)
         {
             isUnlocked = true;
         }
+    }
 
+    public override void _Interact()
+    {
+        base._Interact();
     }
 }
