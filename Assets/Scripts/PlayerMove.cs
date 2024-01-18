@@ -12,6 +12,7 @@ public class PlayerMove : MonoBehaviour
     public TextMeshProUGUI staminaText;
 
     [SerializeField]
+    private bool timerDone = false;
     public float stamina = 5f;
     public float staminaTimer = 2;
 
@@ -52,21 +53,36 @@ public class PlayerMove : MonoBehaviour
         anim.SetFloat("Horizontal", movement.x);
         anim.SetFloat("Vertical", movement.y);
         anim.SetFloat("Speed", movement.sqrMagnitude);
-        staminaText.text = stamina.ToString("F1");
 
+
+        staminaText.text = ("Stamina: ") +  stamina.ToString("F1");
+
+
+        print("timerUP");
+        staminaTimer += 1 * Time.deltaTime;
 
         if (Input.GetKey(KeyCode.LeftShift) && stamina > 0)
         {
+            print("sprinting");
+
+            staminaTimer = 0;
             stamina -= 1 * Time.deltaTime;
+            timerDone = false;
         }
-        else if(maxStamina >= stamina)
+        else if ((maxStamina > stamina) && timerDone == true)
         {
+
+            print("Recharging stamina");
             stamina += 1 * Time.deltaTime;
         }
 
-        if (staminaTimer <= 0)
+        
+
+        if(staminaTimer >= 2)
         {
-            staminaTimer = 2;
+
+            print("timerDone");
+            timerDone = true;
         }
 
 

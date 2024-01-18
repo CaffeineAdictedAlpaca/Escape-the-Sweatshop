@@ -29,7 +29,7 @@ public class EnemySee : MonoBehaviour
 
         spottedText.SetActive(true);
 
-        player.position = new Vector2(0, 0);//teleports the player to spawn -Sixten
+        player.position = new Vector2(-0.9f, -1.6f);//teleports the player to spawn -Sixten
         yield return new WaitForSeconds(2f);
 
         spottedText.SetActive(false);
@@ -42,7 +42,7 @@ public class EnemySee : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player"))//when enemy sees player: start the respawn prosses
         {
             print("Spotted");
             StartCoroutine(fade());
