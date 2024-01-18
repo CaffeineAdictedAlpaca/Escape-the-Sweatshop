@@ -13,7 +13,7 @@ public class PlayerMove : MonoBehaviour
 
     [SerializeField]
     private bool timerDone = false;
-    public float stamina = 5f;
+    public float stamina = 1f;
     public float staminaTimer = 2;
 
 
