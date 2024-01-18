@@ -8,6 +8,7 @@ TagManager:
   - securityKey
   - janitorKey
   - keyPad
+  - Audio
   layers:
   - Default
   - TransparentFX

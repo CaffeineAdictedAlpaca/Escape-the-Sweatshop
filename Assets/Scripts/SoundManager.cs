@@ -2,40 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class SoundManager : MonoBehaviour
 {
-    [SerializeField] Slider volumeSlider;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //Kollar ifall det finns en sparad volym, annars laddar full volym
-        if (!PlayerPrefs.HasKey("masterVolume"))
-        {
-            PlayerPrefs.SetFloat("musicVolume", 1);
-            Load();
-        }
-        else
-        {
-            Load();
-        }
-    }
-
+    [Header("Audio Sliders")]
+    [SerializeField] private Slider masterSlider;
+    [SerializeField] private Slider musicSlider;
+    [SerializeField] private Slider sfxSlider;
+    [SerializeField] AudioMixer myMixer;
     // Update is called once per frame
-    public void ChangeVolume()
+    public void ChangeMasterVolume()
     {
-        //Ändrar spelets volym beroende på sliderns värde.
-        AudioListener.volume = volumeSlider.value;
-        Save();
+        //Ändrar spelets volym beroende på sliderns värde. -Adrian
+        AudioListener.volume = masterSlider.value;
     }
 
-    private void Load()
+    public void ChangeMusicVolume()
     {
-        volumeSlider.value = PlayerPrefs.GetFloat("masterVolume");
+        //Ändar music värdet i mixern beroende på sliders värde. - Adrian
+        float volume = musicSlider.value;
+        myMixer.SetFloat("Music", Mathf.Log10(volume)*20);
     }
-    private void Save()
+    public void ChangeSFXVolume()
     {
-        //Sparar volymets värde som en float;
-        PlayerPrefs.SetFloat("masterVolume", volumeSlider.value);
+        //Ändar music värdet i mixern beroende på sliders värde. - Adrian
+        float volume = sfxSlider.value;
+        myMixer.SetFloat("SFX", Mathf.Log10(volume) * 20);
     }
 }

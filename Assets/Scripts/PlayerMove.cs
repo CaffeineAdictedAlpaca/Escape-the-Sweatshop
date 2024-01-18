@@ -28,6 +28,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField]
     Rigidbody2D player;
     public float rotationSpeed = 5f;
+    //Variables för animation - Adrian
     public Animator anim;
     private Renderer rend;
     // Start is called before the first frame update
@@ -47,6 +48,7 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Animerar karaktären - Adrian
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
