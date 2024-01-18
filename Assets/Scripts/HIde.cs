@@ -10,45 +10,42 @@ public class HIde : Interact
     public Transform Cabinet;
     public Transform stopHideTP;
 
-    public override void _Update()
+    private void Start()
     {
         coll = player.GetComponent<Collider2D>();
         playerSprite = player.GetComponent<SpriteRenderer>();
-        if (hiding == false && canInteract == true)
-        {
-            interactText.SetActive(true);
-        }
-
-        if (hiding == true)
-        {
-            interactText.SetActive(false);
-
-            coll.enabled = false;
-            playerSprite.enabled = false;
-        }
-        if (hiding == false)
-        {
-            coll.enabled = true;
-            playerSprite.enabled = true;
-        }
-
-
+    }
+    public override void _Update()
+    {
         if ((Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)) && hiding == true)
         {
-            hiding = false;
+            notHiding();
             interactText.SetActive(false);
             player.transform.position = stopHideTP.position;
+            hiding = false;
         }
     }
 
     public override void _Interact()
     {
-        
+        isHiding();
         player.transform.position = Cabinet.position;
 
         hiding = true;
 
 
+    }
+    public void isHiding()
+    {
+        interactText.SetActive(false);
+
+        coll.enabled = false;
+        playerSprite.enabled = false;
+    }
+    public void notHiding()
+    {
+        coll.enabled = true;
+        playerSprite.enabled = true;
     }
 
 }
