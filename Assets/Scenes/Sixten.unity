@@ -1238,11 +1238,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79f75ed8373e3c8448c2b1edbc4118ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 311610791}
   canInteract: 0
-  player: {fileID: 0}
-  playerRb: {fileID: 0}
-  cameras: []
+  player: {fileID: 652445282}
+  playerRb: {fileID: 652445284}
+  cameras:
+  - {fileID: 1850345472}
 --- !u!1 &325060323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1945,6 +1946,11 @@ GameObject:
 --- !u!4 &652445283 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7629303757383243073, guid: a697140b7f439504ea916fe5f8559ce1, type: 3}
+  m_PrefabInstance: {fileID: 3701514461802477374}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &652445284 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1769947856217706388, guid: a697140b7f439504ea916fe5f8559ce1, type: 3}
   m_PrefabInstance: {fileID: 3701514461802477374}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &669241515
@@ -3412,8 +3418,8 @@ Transform:
   m_GameObject: {fileID: 1149887822}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.58, y: 0.58, z: 0.58}
+  m_LocalPosition: {x: -0.1559, y: 0, z: 0}
+  m_LocalScale: {x: 0.891866, y: 0.58, z: 0.58}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1850345473}
@@ -6016,8 +6022,8 @@ Transform:
   m_GameObject: {fileID: 1850345472}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: -2.4999995, y: 0, z: 0}
-  m_LocalScale: {x: 2.8938348, y: 4.937352, z: 1.2517239}
+  m_LocalPosition: {x: -1.4510025, y: 0, z: 0}
+  m_LocalScale: {x: 2.893835, y: 3.2108676, z: 1.2517239}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1149887823}
@@ -6355,8 +6361,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactText: {fileID: 259002398}
   canInteract: 0
-  player: {fileID: 0}
-  playerRb: {fileID: 0}
+  player: {fileID: 652445282}
+  playerRb: {fileID: 652445284}
   hiding: 0
   Cabinet: {fileID: 1951525951}
   stopHideTP: {fileID: 270373947}

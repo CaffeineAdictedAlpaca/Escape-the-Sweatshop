@@ -10,18 +10,25 @@ public class PauseMenu : MonoBehaviour
     public Button ResumeButton;
     public Button SettingsButton;
     public Button QuitButton;
-    GameObject[] buttons;
+    public Button MenuButton;
+    public GameObject buttonsHolder;
     private void Start()
     { 
         // Kollar efter click på knapparna för att aktivera funktion - Adrian
-        buttons = GameObject.FindGameObjectsWithTag("Buttons");
+
         Button resume = ResumeButton.GetComponent<Button>();
         resume.onClick.AddListener(ResumeGame);
+
         Button settings = SettingsButton.GetComponent<Button>();
         settings.onClick.AddListener(Settings);
+
+        Button mainmenu = MenuButton.GetComponent<Button>();
+        mainmenu.onClick.AddListener(MainMenu);
+
         Button quit = QuitButton.GetComponent<Button>();
         quit.onClick.AddListener(QuitGame);
-        buttons[2].SetActive(false);
+        //Gömmer knapparna från start
+        buttonsHolder.SetActive(false);
     }
     void Update()
     {
@@ -29,25 +36,30 @@ public class PauseMenu : MonoBehaviour
         if (Input.GetKeyDown("escape") && Time.timeScale == 1)
         {
             Time.timeScale = 0;
-            buttons[2].SetActive(true);
+            buttonsHolder.SetActive(true);
         }
         //Om tiden är fryst göm knapparna och ofrys den om man trycker escape igen - Adrian
         else if (Input.GetKeyDown("escape") && Time.timeScale == 0)
         {
             Time.timeScale = 1;
-            buttons[2].SetActive(false);
+            buttonsHolder.SetActive(false);
         }
     }
     // Om man klickar resume, göm knapparna och resuma spelet - Adrian
     private void ResumeGame()
     {
         Time.timeScale = 1;
-        buttons[2].SetActive(false);
+        buttonsHolder.SetActive(false);
     }
     private void Settings()
     {
-
+        print("settings");
     }
+    private void MainMenu()
+    {
+        SceneManager.UnloadSceneAsync("SampleScene");
+    }
+
     //Om man trycker quit, stäng spelet.
     private void QuitGame()
     {
