@@ -8,7 +8,6 @@ public class PauseMenu : MonoBehaviour
 {
     // Start is called before the first frame update
     public Button ResumeButton;
-    public Button SettingsButton;
     public Button QuitButton;
     public Button MenuButton;
     public GameObject buttonsHolder;
@@ -18,9 +17,6 @@ public class PauseMenu : MonoBehaviour
 
         Button resume = ResumeButton.GetComponent<Button>();
         resume.onClick.AddListener(ResumeGame);
-
-        Button settings = SettingsButton.GetComponent<Button>();
-        settings.onClick.AddListener(Settings);
 
         Button mainmenu = MenuButton.GetComponent<Button>();
         mainmenu.onClick.AddListener(MainMenu);
@@ -41,8 +37,7 @@ public class PauseMenu : MonoBehaviour
         //Om tiden är fryst göm knapparna och ofrys den om man trycker escape igen - Adrian
         else if (Input.GetKeyDown("escape") && Time.timeScale == 0)
         {
-            Time.timeScale = 1;
-            buttonsHolder.SetActive(false);
+            ResumeGame();
         }
     }
     // Om man klickar resume, göm knapparna och resuma spelet - Adrian
@@ -51,13 +46,10 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         buttonsHolder.SetActive(false);
     }
-    private void Settings()
-    {
-        print("settings");
-    }
     private void MainMenu()
     {
-        SceneManager.UnloadSceneAsync("SampleScene");
+        SceneManager.UnloadSceneAsync(1);
+        SceneManager.LoadSceneAsync(0);
     }
 
     //Om man trycker quit, stäng spelet.
