@@ -14,7 +14,7 @@ public class RotateObject : MonoBehaviour
         {
             rotateClockwise = !rotateClockwise;
         }
-        if (transform.rotation.z < -0.5f)
+        if (transform.rotation.z < -0.1f)
         {
             rotateClockwise = !rotateClockwise;
         }
