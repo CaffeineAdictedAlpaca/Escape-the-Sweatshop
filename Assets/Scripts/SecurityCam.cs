@@ -8,23 +8,24 @@ public class RotateObject : MonoBehaviour
     public float rotationSpeed;
     private bool rotateClockwise = true;
 
+    //gjord av derrick och sixten
     void Update()
     {
-        if (transform.rotation.z > 0.5f)
+        if (transform.rotation.z > 0.5f)//when the camera rotates past max rotation the rotation direction reverses -Sixten
         {
             rotateClockwise = !rotateClockwise;
         }
-        if (transform.rotation.z < -0.1f)
+        if (transform.rotation.z < -0.1f)//when the camera rotates past minimum rotation the rotation direction reverses -Sixten
         {
             rotateClockwise = !rotateClockwise;
         }
 
-        if (rotateClockwise == true)
+        if (rotateClockwise == true)//if rotate clockwise is true rotate clokwise -Sixten
         {
             transform.Rotate(Vector3.forward, rotationSpeed * Time.deltaTime);
         }
 
-        if (rotateClockwise == false)
+        if (rotateClockwise == false)//if rotate clockwise is fals rotate counter clokwise -Sixten
         {
             transform.Rotate(Vector3.forward, -rotationSpeed * Time.deltaTime);
         }

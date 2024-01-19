@@ -14,7 +14,7 @@ public class Interact : MonoBehaviour
     void Start()
     {
         _Start();
-        interactText.SetActive(false);//hide interact text on start
+        interactText.SetActive(false);//hide interact text on start -Sixten
     }
 
     // Update is called once per frame
@@ -44,7 +44,7 @@ public class Interact : MonoBehaviour
             canInteract = false;
         }
     }
-    public virtual void _Start()
+    public virtual void _Start()//override this to use start in child script -Sixten
     {
 
     }
