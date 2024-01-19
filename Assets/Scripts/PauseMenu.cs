@@ -9,7 +9,6 @@ public class PauseMenu : MonoBehaviour
     // Start is called before the first frame update
     public Button ResumeButton;
     public Button QuitButton;
-    public Button MenuButton;
     public GameObject buttonsHolder;
     private void Start()
     { 
@@ -17,9 +16,6 @@ public class PauseMenu : MonoBehaviour
 
         Button resume = ResumeButton.GetComponent<Button>();
         resume.onClick.AddListener(ResumeGame);
-
-        Button mainmenu = MenuButton.GetComponent<Button>();
-        mainmenu.onClick.AddListener(MainMenu);
 
         Button quit = QuitButton.GetComponent<Button>();
         quit.onClick.AddListener(QuitGame);
@@ -45,11 +41,6 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1;
         buttonsHolder.SetActive(false);
-    }
-    private void MainMenu()
-    {
-        SceneManager.UnloadSceneAsync(1);
-        SceneManager.LoadSceneAsync(0);
     }
 
     //Om man trycker quit, stäng spelet.
