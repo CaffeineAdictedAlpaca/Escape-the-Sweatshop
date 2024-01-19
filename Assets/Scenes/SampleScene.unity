@@ -7569,9 +7569,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dc29b22ecfa4ce46bde080a8b7966c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blackScreen: {fileID: 0}
-  endTP: {fileID: 0}
-  player: {fileID: 0}
+  blackScreen: {fileID: 7826145743033463344}
+  endTP: {fileID: 391204016}
+  player: {fileID: 2587900372116305993}
 --- !u!61 &1027697584
 BoxCollider2D:
   m_ObjectHideFlags: 0
