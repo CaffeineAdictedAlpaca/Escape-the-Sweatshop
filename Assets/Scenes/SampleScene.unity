@@ -5139,7 +5139,7 @@ MonoBehaviour:
   playerRb: {fileID: 5952268627345695388}
   cameras:
   - {fileID: 1287330419}
-  cameraOffText: {fileID: 0}
+  cameraOffText: {fileID: 277120219}
 --- !u!1 &747367667
 GameObject:
   m_ObjectHideFlags: 0
