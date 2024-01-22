@@ -96,7 +96,7 @@ public class PlayerMove : MonoBehaviour
             fullSpeed = sprintSpeed / 2;
         }
 
-        if (stamina <= 0f)
+        else if (stamina <= 0f)
         {
             halfSpeed = noSprintHalfSpeed;
             fullSpeed = speed;
