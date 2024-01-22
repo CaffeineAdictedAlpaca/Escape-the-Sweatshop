@@ -83,7 +83,7 @@ public class PlayerMove : MonoBehaviour
             timerDone = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && stamina > 0)
         {
             
             halfSpeed = halfSprintSpeed;
