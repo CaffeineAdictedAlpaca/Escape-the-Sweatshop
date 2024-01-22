@@ -12,8 +12,8 @@ public class settings : MonoBehaviour
         public KeyCode key;
     }
 
-    public static Control[] controls = new Control[6];
-    //0 - up, 1 - down, 2- left, 3- right, 4-pickup, 5-drop
+    public static Control[] controls = new Control[5];
+    //0 - up, 1 - down, 2- left, 3- right, 4-pickup
 
 
     void Start()
@@ -23,7 +23,7 @@ public class settings : MonoBehaviour
         controls[2].key = KeyCode.A;
         controls[3].key = KeyCode.D;
         controls[4].key = KeyCode.E;
-        controls[5].key = KeyCode.Q;
+        
 
     }
 
