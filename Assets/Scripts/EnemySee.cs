@@ -8,6 +8,7 @@ public class EnemySee : MonoBehaviour
     public Image spottedScreen;
     public Transform player;
     [SerializeField] GameObject spottedText;
+    public GameObject pm;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,9 @@ public class EnemySee : MonoBehaviour
     }
     IEnumerator fade()
     {
+        //can't move
+        pm.GetComponent<PlayerMove>().enabled = false;
+
         for (float i = 0; i <= 1.1f; i += 10f * Time.deltaTime)//fade in the spottedScreen imedge -Sixten
         {
             yield return new WaitForSeconds(0.01f);
@@ -39,12 +43,16 @@ public class EnemySee : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
             spottedScreen.color = new Color(spottedScreen.color.r, spottedScreen.color.g, spottedScreen.color.b, i);
         }
+
+        //can move again
+        pm.GetComponent<PlayerMove>().enabled = true;
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))//when enemy sees player: start the respawn prosses -Sixten
         {
             print("Spotted");
+
             StartCoroutine(fade());
         }
     }
