@@ -2466,6 +2466,7 @@ MonoBehaviour:
   spottedScreen: {fileID: 7826145743033463344}
   player: {fileID: 2587900372116305993}
   spottedText: {fileID: 4787043721070730219}
+  pm: {fileID: 2465270349920765795}
 --- !u!212 &330749848
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4367,6 +4368,7 @@ MonoBehaviour:
   spottedScreen: {fileID: 7826145743033463344}
   player: {fileID: 2587900372116305993}
   spottedText: {fileID: 4787043721070730219}
+  pm: {fileID: 2465270349920765795}
 --- !u!212 &563338813
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8216,6 +8218,7 @@ MonoBehaviour:
   spottedScreen: {fileID: 7826145743033463344}
   player: {fileID: 2587900372116305993}
   spottedText: {fileID: 4787043721070730219}
+  pm: {fileID: 2465270349920765795}
 --- !u!212 &1056787627
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10000,8 +10003,8 @@ Transform:
   m_GameObject: {fileID: 1287330419}
   serializedVersion: 2
   m_LocalRotation: {x: 0.44826266, y: 0.8939019, z: -0.000000019594184, w: -0.000000039073694}
-  m_LocalPosition: {x: -1.607, y: -1.207, z: 0}
-  m_LocalScale: {x: 1.7952471, y: 3.401916, z: 1}
+  m_LocalPosition: {x: -1.9965, y: -1.4977, z: -0}
+  m_LocalScale: {x: 1.7952471, y: 4.0849137, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1235229663}
@@ -10069,6 +10072,7 @@ MonoBehaviour:
   spottedScreen: {fileID: 7826145743033463344}
   player: {fileID: 2587900372116305993}
   spottedText: {fileID: 4787043721070730219}
+  pm: {fileID: 2465270349920765795}
 --- !u!212 &1287330423
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12913,6 +12917,7 @@ MonoBehaviour:
   spottedScreen: {fileID: 7826145743033463344}
   player: {fileID: 2587900372116305993}
   spottedText: {fileID: 4787043721070730219}
+  pm: {fileID: 2465270349920765795}
 --- !u!212 &1701022983
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14098,6 +14103,7 @@ MonoBehaviour:
   spottedScreen: {fileID: 7826145743033463344}
   player: {fileID: 2587900372116305993}
   spottedText: {fileID: 4787043721070730219}
+  pm: {fileID: 2465270349920765795}
 --- !u!212 &1877153942
 SpriteRenderer:
   m_ObjectHideFlags: 0
