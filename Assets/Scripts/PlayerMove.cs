@@ -12,6 +12,8 @@ public class PlayerMove : MonoBehaviour
     public TextMeshProUGUI staminaText;
 
     [SerializeField]
+
+    public Image staminaBar;
     private bool timerDone = false;
     public float stamina = 1f;
     public float staminaTimer = 2;
@@ -56,19 +58,22 @@ public class PlayerMove : MonoBehaviour
         anim.SetFloat("Vertical", movement.y);
         anim.SetFloat("Speed", movement.sqrMagnitude);
 
-
+        // Stamina script - Santiago
         staminaText.text = ("Stamina: ") +  stamina.ToString("F1");
 
         staminaTimer += 1 * Time.deltaTime;
 
         if (Input.GetKey(KeyCode.LeftShift) && stamina > 0)
         {
+
             staminaTimer = 0;
+            staminaBar.fillAmount -= 1 * Time.deltaTime;
             stamina -= 1 * Time.deltaTime;
             timerDone = false;
         }
         else if ((maxStamina > stamina) && timerDone == true)
         {
+            staminaBar.fillAmount += 1 * Time.deltaTime;
             stamina += 1 * Time.deltaTime;
         }
 

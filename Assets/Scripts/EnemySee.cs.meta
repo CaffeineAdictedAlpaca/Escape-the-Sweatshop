@@ -3,7 +3,11 @@ guid: 7f9447e419d639d439cb31e7e351fa43
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - spottedScreen: {instanceID: 0}
+  - player: {instanceID: 0}
+  - spottedText: {instanceID: 0}
+  - pm: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
