@@ -22,7 +22,7 @@ public class EnemySee : MonoBehaviour
     }
     IEnumerator fade()
     {
-        //can't move
+        //can't move -Sixten
         pm.GetComponent<PlayerMove>().enabled = false;
 
         for (float i = 0; i <= 1.1f; i += 10f * Time.deltaTime)//fade in the spottedScreen imedge -Sixten
@@ -44,7 +44,7 @@ public class EnemySee : MonoBehaviour
             spottedScreen.color = new Color(spottedScreen.color.r, spottedScreen.color.g, spottedScreen.color.b, i);
         }
 
-        //can move again
+        //can move again -Sixten
         pm.GetComponent<PlayerMove>().enabled = true;
     }
     private void OnTriggerEnter2D(Collider2D other)
