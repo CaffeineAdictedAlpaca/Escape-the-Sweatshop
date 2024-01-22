@@ -24,7 +24,7 @@ public class PauseMenu : MonoBehaviour
     }
     void Update()
     {
-        //Frys tiden och visa menyn om man trycker på escape
+        //Frys tiden och visa menyn om man trycker på escape - Adrian
         if (Input.GetKeyDown("escape") && Time.timeScale == 1)
         {
             Time.timeScale = 0;

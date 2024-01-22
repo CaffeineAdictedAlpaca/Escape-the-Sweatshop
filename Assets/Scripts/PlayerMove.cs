@@ -58,7 +58,7 @@ public class PlayerMove : MonoBehaviour
         anim.SetFloat("Vertical", movement.y);
         anim.SetFloat("Speed", movement.sqrMagnitude);
 
-
+        // Stamina script - Santiago
         staminaText.text = ("Stamina: ") +  stamina.ToString("F1");
 
         staminaTimer += 1 * Time.deltaTime;
