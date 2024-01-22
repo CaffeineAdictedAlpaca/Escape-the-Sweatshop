@@ -22296,7 +22296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   staminaText: {fileID: 5877416910769996072}
-  timerDone: 0
+  staminaBar: {fileID: 0}
   stamina: 1
   staminaTimer: 2
   speed: 0.1
@@ -24701,12 +24701,12 @@ RectTransform:
   - {fileID: 156134617003332154}
   - {fileID: 8223153538285559958}
   - {fileID: 5298813825731382404}
+  - {fileID: 1953134355}
   - {fileID: 4134705247428708323}
   - {fileID: 5411525090285778380}
   - {fileID: 6790067851427443675}
   - {fileID: 530631577747144438}
   - {fileID: 8958551908982609150}
-  - {fileID: 1953134355}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
