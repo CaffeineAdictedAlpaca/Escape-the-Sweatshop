@@ -27,6 +27,10 @@ public class EndTP : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        StartCoroutine(TP());
+        if (collision.CompareTag("Player"))
+        {
+            StartCoroutine(TP());
+        }
+
     }
 }
