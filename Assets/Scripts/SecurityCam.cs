@@ -7,15 +7,16 @@ public class RotateObject : MonoBehaviour
     [SerializeField] 
     public float rotationSpeed;
     private bool rotateClockwise = true;
-
+    public float maxMove;
+    public float minMove;
     //gjord av derrick och sixten
     void Update()
     {
-        if (transform.rotation.z > 0.5f)//when the camera rotates past max rotation the rotation direction reverses -Sixten
+        if (transform.rotation.z > maxMove)//when the camera rotates past max rotation the rotation direction reverses -Sixten
         {
             rotateClockwise = !rotateClockwise;
         }
-        if (transform.rotation.z < -0.1f)//when the camera rotates past minimum rotation the rotation direction reverses -Sixten
+        if (transform.rotation.z < minMove)//when the camera rotates past minimum rotation the rotation direction reverses -Sixten
         {
             rotateClockwise = !rotateClockwise;
         }
