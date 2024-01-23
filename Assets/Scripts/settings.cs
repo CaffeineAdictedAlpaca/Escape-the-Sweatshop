@@ -13,6 +13,7 @@ public class settings : MonoBehaviour
     public TextMeshProUGUI left;
     public TextMeshProUGUI right;
     public TextMeshProUGUI pickUp;
+    public TextMeshProUGUI sprint;
 
 
     public struct Control
@@ -21,7 +22,7 @@ public class settings : MonoBehaviour
         public KeyCode key;
     }
 
-    public static Control[] controls = new Control[5];
+    public static Control[] controls = new Control[6];
     //0 - up, 1 - down, 2- left, 3- right, 4-pickup
 
 
@@ -32,6 +33,7 @@ public class settings : MonoBehaviour
         controls[2].key = KeyCode.A;
         controls[3].key = KeyCode.D;
         controls[4].key = KeyCode.E;
+        controls[5].key = KeyCode.LeftShift;
         
 
     }
@@ -60,6 +62,8 @@ public class settings : MonoBehaviour
         left.text = controls[2].key.ToString();
         right.text = controls[3].key.ToString();
         pickUp.text = controls[4].key.ToString();
+        sprint.text = controls[5].key.ToString();
+        
     }
 
     public void changecontrols(int index)
