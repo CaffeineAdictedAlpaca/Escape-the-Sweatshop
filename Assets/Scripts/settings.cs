@@ -2,9 +2,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class settings : MonoBehaviour
 {
+    //gjord av max
+
+    public TextMeshProUGUI up;
+    public TextMeshProUGUI down;
+    public TextMeshProUGUI left;
+    public TextMeshProUGUI right;
+    public TextMeshProUGUI pickUp;
+
 
     public struct Control
     {
@@ -46,6 +55,11 @@ public class settings : MonoBehaviour
             }
         }
 
+        up.text = controls[0].key.ToString();
+        down.text = controls[1].key.ToString();
+        left.text = controls[2].key.ToString();
+        right.text = controls[3].key.ToString();
+        pickUp.text = controls[4].key.ToString();
     }
 
     public void changecontrols(int index)
