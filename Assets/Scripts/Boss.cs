@@ -4,33 +4,18 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
-    public float bossMaxHealth;
-    private float bossHealth;
-
-
-
+    private float rotation;
+    public float rotationSpeed;
     // Start is called before the first frame update
     void Start()
     {
-        bossHealth = bossMaxHealth;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void StartBossfight()
-    {
-
-    }
-    private void Bossgight()
-    {
-
-    }
-    private void StopBossfight()
-    {
-
+        rotation += rotationSpeed * Time.deltaTime;
+        transform.rotation = Quaternion.Euler(0, 0, rotation);
     }
 }
