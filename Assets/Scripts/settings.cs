@@ -10,7 +10,7 @@ public class settings : MonoBehaviour
 {
     //gjord av max
 
-    public Button SettingsButton;
+    
     public TextMeshProUGUI up;
     public TextMeshProUGUI down;
     public TextMeshProUGUI left;
@@ -32,8 +32,7 @@ public class settings : MonoBehaviour
     void Start()
     {
 
-        Button start = SettingsButton.GetComponent<Button>();
-        start.onClick.AddListener(StartGame);
+       
 
 
         controls[0].key = KeyCode.W;
@@ -80,9 +79,6 @@ public class settings : MonoBehaviour
         print("choose a button");
     }
 
-    private void StartGame()
-    {
-        SceneManager.LoadScene(2, LoadSceneMode.Single);
-    }
+    
 
 }
