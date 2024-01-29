@@ -31,7 +31,7 @@ public class settings : MonoBehaviour
 
     void Start()
     {
-
+        gameObject.SetActive(false);
        
 
 
