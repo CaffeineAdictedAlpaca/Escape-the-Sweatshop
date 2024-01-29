@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class settings : MonoBehaviour
 {
     //gjord av max
 
+    public Button SettingsButton;
     public TextMeshProUGUI up;
     public TextMeshProUGUI down;
     public TextMeshProUGUI left;
@@ -28,6 +31,11 @@ public class settings : MonoBehaviour
 
     void Start()
     {
+
+        Button start = SettingsButton.GetComponent<Button>();
+        start.onClick.AddListener(StartGame);
+
+
         controls[0].key = KeyCode.W;
         controls[1].key = KeyCode.S;
         controls[2].key = KeyCode.A;
@@ -70,6 +78,11 @@ public class settings : MonoBehaviour
     {
         controls[index].change = true;
         print("choose a button");
+    }
+
+    private void StartGame()
+    {
+        SceneManager.LoadScene(2, LoadSceneMode.Single);
     }
 
 }

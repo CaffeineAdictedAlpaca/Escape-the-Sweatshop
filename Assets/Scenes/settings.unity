@@ -990,12 +990,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 093f21fe48454e947b15b86d4c951ae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SettingsButton: {fileID: 0}
   up: {fileID: 2016971687}
   down: {fileID: 1979024457}
   left: {fileID: 1165789314}
   right: {fileID: 1445888306}
   pickUp: {fileID: 1821125022}
-  sprint: {fileID: 0}
+  sprint: {fileID: 964548768}
 --- !u!4 &932242733
 Transform:
   m_ObjectHideFlags: 0
