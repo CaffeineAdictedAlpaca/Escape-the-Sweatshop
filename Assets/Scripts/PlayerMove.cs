@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 
 public class PlayerMove : MonoBehaviour
-{
+{ 
+
     Vector2 movement;
     //Stamina  and sprint (Santiago)
     [SerializeField]
@@ -63,7 +64,7 @@ public class PlayerMove : MonoBehaviour
 
         staminaTimer += 1 * Time.deltaTime;
 
-        if (Input.GetKey(KeyCode.LeftShift) && stamina > 0)
+        if (Input.GetKey(settings.controls[5].key) && stamina > 0)
         {
 
             staminaTimer = 0;
@@ -83,14 +84,14 @@ public class PlayerMove : MonoBehaviour
             timerDone = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && stamina > 0)
+        if (Input.GetKeyDown(settings.controls[5].key) && stamina > 0)
         {
             
             halfSpeed = halfSprintSpeed;
             fullSpeed = sprintSpeed;
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        if (Input.GetKeyUp(settings.controls[5].key))
         {
             halfSpeed = noSprintHalfSpeed;
             fullSpeed = sprintSpeed / 2;
@@ -105,12 +106,12 @@ public class PlayerMove : MonoBehaviour
 
 
         
-        if (Input.GetKey(KeyCode.W))//if the W key is pressed add a force upp -Sixten
+        if (Input.GetKey(settings.controls[0].key))//if the W key is pressed add a force upp -Sixten
 
         {
             //anim.SetFloat("Horizontal", 1);
             player.AddForce(Vector2.up * speed * Time.deltaTime);
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))//if moving in more than one direction reduce the speed of the player -Sixten
+            if (Input.GetKey(settings.controls[2].key) || Input.GetKey(settings.controls[1].key) || Input.GetKey(settings.controls[3].key))//if moving in more than one direction reduce the speed of the player -Sixten
             {
                 speed = halfSpeed;
             }
@@ -119,11 +120,11 @@ public class PlayerMove : MonoBehaviour
                 speed = fullSpeed;
             }
         }
-        if (Input.GetKey(KeyCode.S))//if the S key is pressed add a force down -Sixten
+        if (Input.GetKey(settings.controls[1].key))//if the S key is pressed add a force down -Sixten
         {
             //anim.SetFloat("Horizontal", -1);
             player.AddForce(Vector2.down * speed * Time.deltaTime);
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.D))//if moving in more than one direction reduce the speed of the player -Sixten
+            if (Input.GetKey(settings.controls[2].key) || Input.GetKey(settings.controls[0].key) || Input.GetKey(settings.controls[3].key))//if moving in more than one direction reduce the speed of the player -Sixten
             {
                 speed = halfSpeed;
             }
@@ -132,11 +133,11 @@ public class PlayerMove : MonoBehaviour
                 speed = fullSpeed;
             }
         }
-        if (Input.GetKey(KeyCode.D))//if the D key is pressed add a force right -Sixten
+        if (Input.GetKey(settings.controls[3].key))//if the D key is pressed add a force right -Sixten
         {
             //anim.SetFloat("Vertical", 1);
             player.AddForce(Vector2.right * speed * Time.deltaTime);
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))//if moving in more than one direction reduce the speed of the player -Sixten
+            if (Input.GetKey(settings.controls[2].key) || Input.GetKey(settings.controls[0].key) || Input.GetKey(settings.controls[1].key))//if moving in more than one direction reduce the speed of the player -Sixten
             {
                 speed = halfSpeed;
             }
@@ -145,11 +146,11 @@ public class PlayerMove : MonoBehaviour
                 speed = fullSpeed;
             }
         }
-        if (Input.GetKey(KeyCode.A))//if the A key is pressed add a force left -Sixten
+        if (Input.GetKey(settings.controls[2].key))//if the A key is pressed add a force left -Sixten
         { 
             //anim.SetFloat("Vertical", -1);
             player.AddForce(Vector2.left * speed * Time.deltaTime);
-            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.D))//if moving in more than one direction reduce the speed of the player -Sixten
+            if (Input.GetKey(settings.controls[1].key) || Input.GetKey(settings.controls[0].key) || Input.GetKey(settings.controls[3].key))//if moving in more than one direction reduce the speed of the player -Sixten
             {
                 speed = halfSpeed;
             }

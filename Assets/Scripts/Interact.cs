@@ -21,7 +21,7 @@ public class Interact : MonoBehaviour
     void Update()
     {
         _Update();
-        if (canInteract == true && Input.GetKeyDown(KeyCode.E))//if you press space when can interac is true, add force in the direction the canonPointer is pointing -Sixten
+        if (canInteract == true && Input.GetKeyDown(settings.controls[4].key))//if you press space when can interac is true, add force in the direction the canonPointer is pointing -Sixten
         {
             _Interact();
         }
