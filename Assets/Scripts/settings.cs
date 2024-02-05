@@ -28,10 +28,16 @@ public class settings : MonoBehaviour
     public static Control[] controls = new Control[6];
     //0 - up, 1 - down, 2- left, 3- right, 4-pickup
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 
     void Start()
     {
-        gameObject.SetActive(false);
+        
+
+        //gameObject.SetActive(false);
        
 
 
