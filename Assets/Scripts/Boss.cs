@@ -5,8 +5,8 @@ using UnityEngine;
 public class Boss : MonoBehaviour
 {
 
-    public GameObject floor;
-    private SpriteRenderer floorSpriteRenderer;
+    //public GameObject floor;
+    //private SpriteRenderer floorSpriteRenderer;
    
 
 
@@ -15,7 +15,7 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        floorSpriteRenderer = floor.GetComponent<SpriteRenderer>();
+        //floorSpriteRenderer = floor.GetComponent<SpriteRenderer>();
 
     }
 
@@ -26,7 +26,7 @@ public class Boss : MonoBehaviour
         
 
 
-        rotation += rotationSpeed * Time.deltaTime;
-        transform.rotation = Quaternion.Euler(0, 0, rotation);
+        //rotation += rotationSpeed * Time.deltaTime;
+        //transform.rotation = Quaternion.Euler(0, 0, rotation);
     }
 }
