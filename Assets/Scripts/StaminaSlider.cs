@@ -22,5 +22,8 @@ public class StaminaSlider : PlayerMove
     }
 
 
-    
+    public void setStamina()
+    {
+        stamina = staminaSlider.value;
+    }
 }
