@@ -7,13 +7,13 @@ using UnityEngine.UI;
 public class Tutorial : MonoBehaviour
 {
 
-    public Image w;
-    public Image a;
-    public Image s;
-    public Image d;
-    public Image interact;
-    public Image q;
-    public Image shift;
+    public GameObject w;
+    public GameObject a;
+    public GameObject s;
+    public GameObject d;
+    public GameObject interact;
+    public GameObject q;
+    public GameObject shift;
 
 
 
@@ -28,42 +28,42 @@ public class Tutorial : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            w.enabled = false;
+            w.SetActive(false);
         }
 
 
         if (Input.GetKey(KeyCode.A))
         {
-            a.enabled = false;
+            a.SetActive(false);
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            s.enabled = false;
+            s.SetActive(false);
         }
 
 
         if (Input.GetKey(KeyCode.D))
         {
-            d.enabled = false;
+            d.SetActive(false);
         }
 
 
         if (Input.GetKey(KeyCode.Q))
         {
-            q.enabled = false;
+            q.SetActive(false);
         }
 
 
         if (Input.GetKey(KeyCode.E))
         {
-            interact.enabled = false;
+            interact.SetActive(false);
         }
 
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            shift.enabled = false;
+            shift.SetActive(false);
         }
 
         
