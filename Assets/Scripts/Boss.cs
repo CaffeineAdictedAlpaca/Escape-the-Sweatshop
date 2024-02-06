@@ -16,7 +16,6 @@ public class Boss : MonoBehaviour
     void Start()
     {
         //floorSpriteRenderer = floor.GetComponent<SpriteRenderer>();
-
     }
 
     // Update is called once per frame
@@ -26,7 +25,7 @@ public class Boss : MonoBehaviour
         
 
 
-        //rotation += rotationSpeed * Time.deltaTime;
-        //transform.rotation = Quaternion.Euler(0, 0, rotation);
+        rotation += rotationSpeed * Time.deltaTime;
+        transform.rotation = Quaternion.Euler(0, 0, rotation);
     }
 }

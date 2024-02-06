@@ -16,15 +16,15 @@ public class Pickup : Interact
         if (Input.GetKeyDown(KeyCode.Q))
         {
             transform.parent = itemDorp.transform;
-            ItemIcon.SetActive(false);
+            ItemIcon.SetActive(false);//stänger av item iconen , Santiago
             GetComponent<SpriteRenderer>().enabled = true;
         }
     }
-    public override void _Interact()
+    public override void _Interact()//när du interagerar så...
     {
-        transform.parent = player.transform;
-        transform.position = itemHolder.position;
-        transform.rotation = player.transform.rotation;
+        transform.parent = player.transform;//gör objektet till en child av player, Santiago
+        transform.position = itemHolder.position;// objektet teleporteras till itemholderns position, Santiago
+        transform.rotation = player.transform.rotation;//roterar objektet parallelt med spelaren, Santiago
         ItemIcon.SetActive(true);
         GetComponent<SpriteRenderer>().enabled = false;
     }
