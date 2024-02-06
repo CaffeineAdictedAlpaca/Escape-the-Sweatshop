@@ -27,7 +27,7 @@ public class EndTP : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))//if the player enters the end tp hitbox, start the teleport funktion -Sixten
         {
             StartCoroutine(TP());
         }
